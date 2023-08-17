@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { Button } from "./ButtonTemp";
+import { Button } from "./Button";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [button, setButton] = useState(window.innerWidth > 960); //piece of state to make sure button does not show under 960 viewport
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -17,19 +17,29 @@ function Navbar() {
       setButton(true);
     }
   };
-  window.addEventListener("resize", showButton);
+  //-----------------------------------------------
+  //this hook makes it so that my button does not rerender when the screen viewing is shrunk
+  useEffect(() => {
+    showButton();
+    window.addEventListener("resize", showButton);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", showButton);
+    };
+  }, []);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             SHKR <i className="fab fa-typo3" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? "nav-menu active" : "na-menu"}>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
