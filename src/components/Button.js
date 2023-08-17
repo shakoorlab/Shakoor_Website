@@ -12,6 +12,7 @@ export const Button = ({
   onClick,
   buttonStyle,
   buttonSize,
+  fadeClass = "", // Default to an empty string
 }) => {
   const checkButtonStyles = STYLES.includes(buttonStyle)
     ? buttonStyle
@@ -22,7 +23,7 @@ export const Button = ({
   return (
     <Link to="/contact" className="btn-mobile">
       <button
-        className={`btn ${checkButtonStyles} ${checkButtonSize}`}
+        className={`btn ${checkButtonStyles} ${checkButtonSize}${fadeClass}`}
         onClick={onClick}
         type={type}
       >
