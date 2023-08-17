@@ -46,7 +46,7 @@
 }
 
 .nav-item {
-  align-items: center;
+  height: 80px;
 }
 
 .nav-links {
@@ -82,7 +82,6 @@
 
   .nav-menu {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 90vh;

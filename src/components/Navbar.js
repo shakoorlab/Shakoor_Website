@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { Button } from "./Button";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(window.innerWidth > 960); //piece of state to make sure button does not show under 960 viewport
+  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -17,24 +17,20 @@ function Navbar() {
       setButton(true);
     }
   };
-  //-----------------------------------------------
-  //this hook makes it so that my button does not rerender when the screen viewing is shrunk
+
   useEffect(() => {
     showButton();
-    window.addEventListener("resize", showButton);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", showButton);
-    };
   }, []);
+
+  window.addEventListener("resize", showButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            Shakoor Lab <i class="fa-solid fa-seedling"></i>
+            Shakoor Lab
+            <i class="fa-solid fa-seedling" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -46,39 +42,28 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/about-us"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/team-page"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/team" className="nav-links" onClick={closeMobileMenu}>
                 Team
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/publications"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Publications
+              <Link to="/news" className="nav-links" onClick={closeMobileMenu}>
+                News
               </Link>
             </li>
-            <li className="nav-item">
+
+            <li>
               <Link
-                to="/contact"
+                to="/contact-us"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Contact
+                Contact Us
               </Link>
             </li>
           </ul>
