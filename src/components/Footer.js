@@ -8,11 +8,9 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the Adventure newsletter to receive our best vacation deals
+          Wanting to inquire about our research?
         </p>
-        <p className="footer-subscription-text">
-          You can unsubscribe at any time.
-        </p>
+        <p className="footer-subscription-text">You can reach us here.</p>
         <div className="input-areas">
           <form>
             <input
@@ -21,7 +19,7 @@ function Footer() {
               type="email"
               placeholder="Your Email"
             />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
+            <Button buttonStyle="btn--outline">Contact</Button>
           </form>
         </div>
       </section>
@@ -29,34 +27,31 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+            <Link to="/sign-up">Research</Link>
+            <Link to="/">Projects</Link>
+            <Link to="/">Values</Link>
+            <Link to="/">Mission</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
+            <Link to="https://www.danforthcenter.org/careers/?gclid=Cj0KCQjwrfymBhCTARIsADXTabnqnh5D5OdQUKWDq65rwGw7AWuzKlXLfXD-TbGLckbfVdL-bvZegjMaAiRAEALw_wcB">
+              Careers
+            </Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
-            <Link to="/">Agency</Link>
-            <Link to="/">Influencer</Link>
+            <h2>Publications</h2>
+            <Link to="/">Google Scholar</Link>
+            <Link to="/">PubMed</Link>
+            <Link to="/">ResearchGate</Link>
+            <Link to="/">Base</Link>
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <Link to="/">Github</Link>
+            <Link to="/">LinkedIn</Link>
           </div>
         </div>
       </div>
@@ -64,19 +59,19 @@ function Footer() {
         <div class="social-media-wrap">
           <div class="footer-logo">
             <Link to="/" className="social-logo">
-              TRVL
-              <i class="fab fa-typo3" />
+              Shakoor Lab
+              <i class="fa-solid fa-seedling" />
             </Link>
           </div>
-          <small class="website-rights">TRVL © 2020</small>
+          <small class="website-rights">Shakoor Lab © 2023</small>
           <div class="social-icons">
             <Link
-              class="social-icon-link facebook"
+              class="social-icon-link Github"
               to="/"
               target="_blank"
-              aria-label="Facebook"
+              aria-label="Github"
             >
-              <i class="fab fa-facebook-f" />
+              <i class="fa-brands fa-github"></i>
             </Link>
             <Link
               class="social-icon-link instagram"
@@ -93,14 +88,6 @@ function Footer() {
               aria-label="Youtube"
             >
               <i class="fab fa-youtube" />
-            </Link>
-            <Link
-              class="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
-              <i class="fab fa-twitter" />
             </Link>
             <Link
               class="social-icon-link twitter"
