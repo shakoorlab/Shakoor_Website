@@ -32,6 +32,7 @@ h1 {
   border-radius: 10px;
 }
 
+/* //? this is for the little blue card that displays at the bottom left of the card */
 .cards__item__link {
   display: flex;
   flex-flow: column;
