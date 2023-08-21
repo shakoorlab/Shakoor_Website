@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./HeroSection.css";
-import "../App.css";
-import { Button } from "./Button";
+import "../../../App.css";
+import { Button } from "../Button/Button";
 
 function HeroSection() {
   const [isVisible, setIsVisible] = useState(true);
