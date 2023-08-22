@@ -1,0 +1,84 @@
+import React from "react";
+import TeamItem from "./TeamItem";
+import "./Team.css";
+
+function Team() {
+  return (
+    <div className="cards">
+      <h1>Our Team</h1>
+      <div className="cards__wrapper">
+        <ul className="cards__items">
+          <TeamItem
+            src="images/articles/article_11.JPG"
+            alt="Sorghum field"
+            text="Harnessing the Power of Climate Smart Crops"
+            label="Principal Investigator"
+            path="https://www.bizjournals.com/stlouis/news/2023/01/01/sorghum-harnessing-the-power-of-climate-smart-crop.html"
+          />
+          <TeamItem
+            src="images/articles/article_10.jpeg"
+            alt="Farmer in field"
+            text="Sorghum's Revival Goes Against the Grain"
+            label="September 30, 2022"
+            path="https://www.forbes.com/sites/daphneewingchow/2022/09/30/sorghums-revival-goes-against-the-grain/?sh=1fede1d66f1c"
+          />
+          <TeamItem
+            src="images/articles/article_8.jpeg"
+            alt="Photo of Sorghum"
+            text="DDPSC Collaborates with Sorghum Producers"
+            label="September 28, 2022"
+            path="https://www.eurekalert.org/news-releases/966324"
+          />
+        </ul>
+        <ul className="cards__items">
+          <TeamItem
+            src="images/articles/article_7.jpeg"
+            alt="Photo at the NSF"
+            text="Receiving the National Science Foundation Grant"
+            label="September 15, 2022"
+            path="https://www.slu.edu/news/2022/september/nsf-grant-edge-computing.php"
+          />
+          <TeamItem
+            src="images/articles/article_1.jpg"
+            alt="Image of PheNode in field "
+            text="Salk Researchers Launch Colaboration"
+            label="September 14, 2021"
+            path="https://www.salk.edu/news-release/salk-plant-researchers-launch-collaboration-to-breed-carbon-capturing-sorghum/"
+          />
+          <TeamItem
+            src="images/articles/article_6.jpeg"
+            alt="Image of Dr. Shakoor working with PheNode"
+            text="You Should Get to Know Dr. Shakoor"
+            label="August 5, 2021"
+            path="https://www.bizjournals.com/stlouis/inno/stories/profiles/2021/08/05/st-louis-character-2021-nadia-shakoor.html"
+          />
+        </ul>
+        <ul className="cards__items">
+          <TeamItem
+            src="images/articles/article_5.jpeg"
+            alt="Image of phenotyper"
+            text="ETHINKSTL: In This Episode for the Week"
+            label=" February 10, 2021"
+            path="https://entrepreneuriallythinking.libsyn.com/ethinkstl-ep213-season16-ep10-nadia-shakoor"
+          />
+          <TeamItem
+            src="images/articles/article_2.jpeg"
+            alt="Image of TerraReff project"
+            text="Farming and Drones? How do they work together?"
+            label="November 16, 2020"
+            path="https://www.stlmag.com/news/nadia-shakoor-field-dock-farming/"
+          />
+          <TeamItem
+            src="images/articles/article_3.jpeg"
+            alt="Image of PheNode in a field"
+            text="Phenotyping Station Ready for Field Testing"
+            label="November 4, 2016"
+            path="https://www.agupdate.com/crops/phenotyping-station-ready-for-field-testing/article_dd916df4-5ed8-5da9-a8cb-0b6696e4d9e1.html"
+          />
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Team;
