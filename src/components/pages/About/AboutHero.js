@@ -10,8 +10,9 @@ function AboutHero() {
         alt="Bee pollinating sorghum"
       />
       <div className="about-text-container">
-        <h1>Improving the Planet Through Plant Science</h1>
+        <h1>Improving the Planet</h1>
         <p>
+          The Shakoor Lab aims to improve the planet using plant science.
           Established in 2021, the Shakoor lab at the Donald Danforth Plant
           Science Center is working hard to create a high-impact research
           program that integrates and applies data streams from diverse

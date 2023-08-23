@@ -1,5 +1,5 @@
 .about-hero-container {
-  position: relative; /* Set to relative so we can position children absolutely within it */
+  position: relative;
   height: 100vh;
   width: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
@@ -8,41 +8,189 @@
 
 img {
   object-fit: cover;
-  width: 100%; /* let the image cover the entire width */
-  height: 100vh; /* set to viewport height */
+  width: 100%;
+  height: 100vh;
 }
 
 .about-text-container {
   position: absolute;
-  left: 63.52%; /* starting from the left edge of the image */
-  top: 38.11%; /* starting from the top edge of the image */
-  width: 25.41%; /* width of the box */
-  height: 57.16%; /* height of the box */
+  left: 63.52%;
+  top: 38.11%;
+  width: 25.41%;
+  height: 58.16%;
   color: #fff;
   z-index: 1;
-  overflow: hidden; /* in case the text tries to overflow the box */
+  overflow: hidden;
   text-align: left;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align children to the start (left for LTR languages) */
 }
 
-/* Adjust the font sizes so that they fit within the box */
 .about-text-container h1 {
-  font-size: 1.35vw; /* using viewport width units */
+  font-size: 1.35vw;
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .about-text-container p {
-  font-size: 0.73vw; /* using viewport width units */
+  font-size: 0.73vw;
   margin-bottom: 20px;
 }
 
 .about-text-container ul {
-  list-style-type: disc; /* This will ensure bullet points are visible */
-  padding-left: 25px; /* Provide space for the bullet points */
+  list-style-type: disc;
+  padding-left: 25px;
 }
 
 .about-text-container ul li {
   font-size: 0.73vw;
-  margin-bottom: 15px; /* Add space between list items */
+  margin-bottom: 15px;
+}
+.fadeInEffect {
+  animation: fadeIn 2s forwards;
 }
 
-/* ... (rest of your media queries adjusting font sizes for various screen sizes) ... */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Large Screens: 2560px */
+@media only screen and (max-width: 2560px) {
+  .about-text-container h1 {
+    font-size: 34px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 18px;
+  }
+}
+
+/* 2240px */
+@media only screen and (max-width: 2240px) {
+  .about-text-container h1 {
+    font-size: 33px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 17.5px;
+  }
+}
+
+/* Smaller Screens: 1920px (Standard HD) */
+@media only screen and (max-width: 1920px) {
+  .about-text-container h1 {
+    font-size: 32px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 15px;
+  }
+}
+/* 1680px */
+@media only screen and (max-width: 1680px) {
+  .about-text-container {
+    width: 30%;
+  }
+  .about-text-container h1 {
+    font-size: 28px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 16px;
+  }
+  .about-text-container ul,
+  .about-text-container ul li {
+    display: none; /* This will hide the ul and li elements */
+  }
+}
+
+/* 1440px (Some Desktop Displays) */
+@media only screen and (max-width: 1440px) {
+  .about-text-container h1 {
+    font-size: 28px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 15px;
+  }
+}
+/* 1280px */
+@media only screen and (max-width: 1280px) {
+  .about-text-container h1 {
+    font-size: 26px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 14.5px;
+  }
+}
+
+/* 1024px (Tablets Landscape) */
+@media only screen and (max-width: 1024px) {
+  .about-text-container h1 {
+    font-size: 24px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 14px;
+  }
+}
+/* 896px */
+@media only screen and (max-width: 896px) {
+  .about-text-container h1 {
+    font-size: 22px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 13.5px;
+  }
+}
+/*--------------------------------------------------------
+/* 768px (Tablets Portrait) */
+@media only screen and (max-width: 768px) {
+  .about-text-container h1 {
+    font-size: 20px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 12px;
+  }
+}
+/* 480px (Mobile Landscape) */
+@media only screen and (max-width: 480px) {
+  .about-text-container h1 {
+    font-size: 18px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 11px;
+  }
+}
+
+/* 320px (Mobile) */
+@media only screen and (max-width: 320px) {
+  .about-text-container h1 {
+    font-size: 16px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 10px;
+  }
+}
+
+/* Smallest size: 300px (Very small mobile screens) */
+@media only screen and (max-width: 300px) {
+  .about-text-container h1 {
+    font-size: 14px;
+  }
+  .about-text-container p,
+  .about-text-container ul li {
+    font-size: 9px;
+  }
+}
