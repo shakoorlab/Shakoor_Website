@@ -94,10 +94,11 @@ h1 {
   padding: 20px 30px 30px;
 }
 
-.cards__item__text {
+.cards__items__text {
   color: #252e48;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 24px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {

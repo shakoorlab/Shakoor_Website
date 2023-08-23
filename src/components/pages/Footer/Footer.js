@@ -29,8 +29,12 @@ function Footer() {
             <h2>About Us</h2>
             <Link to="/sign-up">Research</Link>
             <Link to="/">Projects</Link>
-            <Link to="/">Values</Link>
-            <Link to="/">Mission</Link>
+            <Link to="https://www.danforthcenter.org/news/building-our-culture/#:~:text=Establishment%20of%20Center%20Core%20Values,how%20we%20do%20our%20work.">
+              Values
+            </Link>
+            <Link to="https://www.danforthcenter.org/about-us/mission/#:~:text=We%20seek%20to%20feed%20the,world%20center%20for%20plant%20science.&text=The%20Center%20community%20is%20a%20team%20of%20teams.">
+              Mission
+            </Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
@@ -43,10 +47,12 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Publications</h2>
-            <Link to="/">Google Scholar</Link>
-            <Link to="/">PubMed</Link>
-            <Link to="/">ResearchGate</Link>
-            <Link to="/">Base</Link>
+            <Link to="https://scholar.google.com/citations?user=xhSGNg4AAAAJ&hl=en">
+              Google Scholar
+            </Link>
+            <Link to="https://pubmed.ncbi.nlm.nih.gov/">PubMed</Link>
+            <Link to="https://www.researchgate.net/">ResearchGate</Link>
+            <Link to="https://www.base-search.net/">Base</Link>
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>

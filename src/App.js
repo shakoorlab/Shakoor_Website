@@ -5,6 +5,8 @@ import Navbar from "./components/pages/NavBar/Navbar";
 import Home from "./components/pages/Home/Home";
 import Team from "./components/pages/Team/Team";
 import Footer from "./components/pages/Footer/Footer";
+import Cards from "./components/pages/Article/Cards";
+import AboutHero from "./components/pages/About/AboutHero";
 
 function App() {
   return (
@@ -13,10 +15,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" component={About} /> */}
+          <Route path="/about" element={<AboutHero />} />
           <Route path="/team" element={<Team />} />
-          {/* <Route path="/news" component={News} />
-          <Route path="/contact-us" component={ContactUs} /> */}
+          <Route path="/news" element={<Cards />} />
+          {/* <Route path="/contact-us" component={ContactUs} /> */}
         </Routes>
         <Footer />
       </Router>

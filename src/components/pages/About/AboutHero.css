@@ -1,0 +1,48 @@
+.about-hero-container {
+  position: relative; /* Set to relative so we can position children absolutely within it */
+  height: 100vh;
+  width: 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+img {
+  object-fit: cover;
+  width: 100%; /* let the image cover the entire width */
+  height: 100vh; /* set to viewport height */
+}
+
+.about-text-container {
+  position: absolute;
+  left: 63.52%; /* starting from the left edge of the image */
+  top: 38.11%; /* starting from the top edge of the image */
+  width: 25.41%; /* width of the box */
+  height: 57.16%; /* height of the box */
+  color: #fff;
+  z-index: 1;
+  overflow: hidden; /* in case the text tries to overflow the box */
+  text-align: left;
+}
+
+/* Adjust the font sizes so that they fit within the box */
+.about-text-container h1 {
+  font-size: 1.35vw; /* using viewport width units */
+  margin-bottom: 10px;
+}
+
+.about-text-container p {
+  font-size: 0.73vw; /* using viewport width units */
+  margin-bottom: 20px;
+}
+
+.about-text-container ul {
+  list-style-type: disc; /* This will ensure bullet points are visible */
+  padding-left: 25px; /* Provide space for the bullet points */
+}
+
+.about-text-container ul li {
+  font-size: 0.73vw;
+  margin-bottom: 15px; /* Add space between list items */
+}
+
+/* ... (rest of your media queries adjusting font sizes for various screen sizes) ... */
