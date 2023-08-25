@@ -10,7 +10,7 @@ import QuoteHero from "./components/pages/Quote1/QuoteHero";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { About } from "./components/pages/About/About";
+// import { About } from "./components/pages/About/About";
 import { Contact } from "./components/pages/Contact/Contact";
 
 function App() {

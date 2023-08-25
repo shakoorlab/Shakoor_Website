@@ -7,13 +7,8 @@ export const Contact = () => {
   return (
     <>
       <div className="contact">
-        <img
-          src="/images/contact_us/contact_us.jpg"
-          alt="Contact Background"
-          className="contact-bg-image"
-        />
         <div className="container">
-          <Heading title="Keep In Touch" />
+          {/* <Heading title="Keep In Touch" /> */}
           <div className="content flexsb">
             <div className="right">
               <form>
@@ -33,7 +28,9 @@ export const Contact = () => {
                   rows="10"
                   data-aos="flip-down"
                 ></textarea>
-                <button data-aos="zoom-in-up">Submit</button>
+                <button className="submit" data-aos="zoom-in-up">
+                  Contact
+                </button>
               </form>
             </div>
             <div className="left">

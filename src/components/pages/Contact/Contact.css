@@ -1,17 +1,7 @@
 /*---------contact-------------*/
 .contact {
   margin: 20px 0;
-  position: relative;
-}
-
-.contact-bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* This behaves similar to background-size: cover */
-  z-index: -1; /* This ensures the image stays behind the content */
+  backdrop-filter: blur(10px);
 }
 .contact .right,
 .contact .left {
@@ -30,29 +20,50 @@
   margin: 10px 0;
   border-radius: 5px;
 }
-.heading {
+/* .heading {
   font-size: 30px;
-  color: #fff;
-  font-weight: 600;
+  color: #e0a80d;
   text-align: center;
-  margin-bottom: 40px;
-}
+  margin-bottom: 20px;
+} */
 .contact .container {
   max-width: 80%;
   margin: auto;
 }
 .flexsb {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .flex {
   display: flex;
 }
+.box {
+  margin-top: 15px;
+}
 .box p {
   color: #e0a80d;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 25px;
   margin: 20px 0;
 }
+.box i {
+  color: #fff;
+}
+.submit {
+  font-size: 17px;
+  background-color: #e0a80d;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 /*---------contact-------------*/
-/*---------footer-------------*/
+@media screen and (max-width: 768px) {
+  .left {
+    width: 40%;
+  }
+  .box p {
+    font-size: 13px;
+  }
+}

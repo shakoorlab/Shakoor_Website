@@ -18,45 +18,6 @@ import {
   YouTube,
 } from "@mui/icons-material";
 
-export const navlink = [
-  {
-    url: "/",
-    text: "Home",
-  },
-  {
-    url: "/about",
-    text: "About",
-  },
-  {
-    url: "/services",
-    text: "Services",
-  },
-  {
-    url: "/portfolio",
-    text: "Portfolio",
-  },
-  {
-    url: "/testimonials",
-    text: "Testimonials",
-  },
-  {
-    url: "/blog",
-    text: "Blog",
-  },
-  {
-    url: "/contact",
-    text: "Contact",
-  },
-];
-export const home = [
-  {
-    text: "HELLO I'M",
-    name: "ALAMIN MUSA",
-    post: "WEB DESIGNER",
-    design: "UI / UX DESIGNER",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-  },
-];
 export const about = [
   {
     desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur",
@@ -173,29 +134,7 @@ export const portfolio = [
     title: "Brex Logo",
   },
 ];
-export const testimonials = [
-  {
-    id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-1.png",
-    name: "Alamin Musa",
-    post: "Front End Developer",
-  },
-  {
-    id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-2.png",
-    name: "Alex Ander",
-    post: "Back End Developer",
-  },
-  {
-    id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-3.png",
-    name: "GorkCoder",
-    post: "React Developer",
-  },
-];
+
 export const blog = [
   {
     id: 1,
@@ -225,17 +164,16 @@ export const blog = [
 export const contact = [
   {
     icon: <AddLocationAltOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
+    text1: "975 N Warson Rd",
+    text2: "Olivette, MO 63132",
   },
   {
     icon: <PhoneIphone />,
-    text1: "0123456789",
-    text2: "0345627891",
+    text1: "(314) 587-1000",
   },
   {
     icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
+    text1: "shakoorlab.danforth@gmail.com",
+    text2: "shakoorlab@danforthcenter.org",
   },
 ];

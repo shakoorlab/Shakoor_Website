@@ -9,14 +9,14 @@ function TeamHero() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 7000); // Set the delay to 10 seconds (10,000 milliseconds)
+    }, 4000); // Set the delay to 10 seconds (10,000 milliseconds)
 
     return () => clearTimeout(timer); // Cleanup the timer to avoid any potential issues
   }, []); // The empty dependency array ensures the effect only runs once after the component mounts
 
   return (
     <div className="hero-container">
-      <video src="/videos/DDPSC.mov" autoPlay loop muted />
+      <video src="/videos/meeth_the_team_snippet1.mp4" autoPlay loop muted />
       <h1 className={isVisible ? "" : "fade-out"}>Meet the Team</h1>
       <p className={isVisible ? "" : "fade-out"}>
         {" "}

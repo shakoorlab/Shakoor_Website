@@ -15,8 +15,8 @@ function Home() {
       <QuoteHero />
       {/* <About /> */}
       <Cards />
-      <SorghumHero />
-      <TeamNoHero />
+      {/* <SorghumHero /> */}
+      {/* <TeamNoHero /> */}
       <Contact />
     </>
   );
