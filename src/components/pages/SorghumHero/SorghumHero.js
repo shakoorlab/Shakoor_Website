@@ -5,7 +5,7 @@ import "../../../App.css";
 function SorghumHero() {
   return (
     <div className="sorghum-hero-container">
-      <img src="/images/why_sorghum/4 copy.jpeg" alt="Sorghum Plants" />
+      <img src="/images/why_sorghum/3.jpg" alt="Sorghum Plants" />
       {/* IMPROVING THE PLANET THROUGH PLANT SCIENCE  */}
       {/* Improving the human condition through plant science.  */}
       {/* We seek to feed the hungry and improve human health, 
