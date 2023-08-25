@@ -6,7 +6,7 @@ import Home from "./components/pages/Home/Home";
 import Team from "./components/pages/Team/Team";
 import Footer from "./components/pages/Footer/Footer";
 import Cards from "./components/pages/Article/Cards";
-import AboutHero from "./components/pages/About/AboutHero";
+import QuoteHero from "./components/pages/Quote1/QuoteHero";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutHero />} />
+          <Route path="#" element={<QuoteHero />} />
           <Route path="/team" element={<Team />} />
           <Route path="/news" element={<Cards />} />
           {/* <Route path="/contact-us" component={ContactUs} /> */}

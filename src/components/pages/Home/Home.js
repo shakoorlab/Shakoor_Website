@@ -2,7 +2,7 @@ import React from "react";
 import "../../../App.css";
 import Cards from "../Article/Cards";
 import HeroSection from "../Hero/HeroSection";
-import AboutHero from "../About/AboutHero";
+import QuoteHero from "../Quote1/QuoteHero";
 import SorghumHero from "../SorghumHero/SorghumHero";
 import TeamNoHero from "../Team/TeamNoHero";
 
@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <AboutHero />
+      <QuoteHero />
       <Cards />
       <SorghumHero />
       <TeamNoHero />
