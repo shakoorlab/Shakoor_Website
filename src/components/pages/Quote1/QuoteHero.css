@@ -78,8 +78,15 @@ img {
     font-size: 14px;
   }
 }
+.about-text-container {
+  top: 50.11%;
+}
+
 /* 896px */
 @media only screen and (max-width: 896px) {
+  .about-text-container {
+    top: 55.11%;
+  }
   .about-text-container p {
     font-size: 13.5px;
   }
@@ -87,11 +94,15 @@ img {
 /*--------------------------------------------------------
 /* 768px (Tablets Portrait) */
 @media only screen and (max-width: 768px) {
-  .about-text-container h1 {
-    font-size: 20px;
+  .about-text-container {
+    top: 60.11%;
+    height: 38.16%;
+    left: 50%;
+    width: 45.41%;
   }
   .about-text-container p {
-    font-size: 12px;
+    font-size: 13px;
+    justify-content: center;
   }
 }
 /* 480px (Mobile Landscape) */
