@@ -28,7 +28,7 @@ function App() {
           <Route path="#" element={<QuoteHero />} />
           <Route path="/team" element={<Team />} />
           <Route path="/news" element={<Cards />} />
-          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

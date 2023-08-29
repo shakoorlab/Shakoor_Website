@@ -6,7 +6,7 @@ import "./Contact.css";
 export const Contact = () => {
   return (
     <>
-      <div className="contact">
+      <div className="contact ">
         <div className="container">
           {/* <Heading title="Keep In Touch" /> */}
           <div className="content flexsb">

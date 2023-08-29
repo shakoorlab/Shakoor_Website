@@ -14,9 +14,20 @@ function TeamHero() {
     return () => clearTimeout(timer); // Cleanup the timer to avoid any potential issues
   }, []); // The empty dependency array ensures the effect only runs once after the component mounts
 
+  //-------------------------------------------
+  const [videoSrc, setVideoSrc] = useState("/videos/team1.mov");
+
+  const handleVideoEnd = () => {
+    if (videoSrc === "/videos/team1.mov") {
+      setVideoSrc("/videos/team2.mp4");
+    } else {
+      setVideoSrc("/videos/team1.mov"); // if you want to loop between the two videos
+    }
+  };
+
   return (
     <div className="hero-container">
-      <video src="/videos/meeth_the_team_snippet1.mp4" autoPlay loop muted />
+      <video src={videoSrc} autoPlay loop muted onEnded={handleVideoEnd} />
       <h1 className={isVisible ? "" : "fade-out"}>Meet the Team</h1>
       <p className={isVisible ? "" : "fade-out"}>
         {" "}
