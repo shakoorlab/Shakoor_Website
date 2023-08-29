@@ -5,8 +5,8 @@ import Cards from "../Article/Cards";
 import HeroSection from "../Hero/HeroSection";
 import QuoteHero from "../Quote1/QuoteHero";
 import { Contact } from "../Contact/Contact";
-import travel_02 from "../../../assets/travel-02.jpg";
-import travel_03 from "../../../assets/travel-03.jpg";
+import smol_team from "../../../assets/img.jpg";
+import sorghum from "../../../assets/sorghum.jpg";
 import Slider from "../Slider/Slider";
 
 function Home() {
@@ -16,16 +16,18 @@ function Home() {
     <>
       <HeroSection />
       <Slider
-        imageSrc={travel_02}
-        title={"Be an explorer."}
+        imageSrc={smol_team}
+        title={"More than just scientist."}
         subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
+          "A multicultural and multidisciplinary group of professionals dedicated to advancing plant science "
         }
       />
       <Slider
-        imageSrc={travel_03}
-        title={"Memories for a lifetime."}
-        subtitle={"Your dream vacation is only a few clicks away."}
+        imageSrc={sorghum}
+        title={"More than just a plant."}
+        subtitle={
+          "Sorghum is a versatile and drought-resistant cereal grain vital for food, fodder, and biofuel in many arid and semi-arid regions of the world.."
+        }
         flipped={true}
       />
       <Cards />
