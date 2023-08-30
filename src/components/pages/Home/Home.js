@@ -6,7 +6,7 @@ import QuoteHero from "../Quote1/QuoteHero";
 import smol_team from "../../../assets/img.jpg";
 import sorghum from "../../../assets/sorghum.jpg";
 import Slider from "../Slider/Slider";
-import { End } from "../../End/End";
+import { End } from "../End/End";
 
 function Home() {
   return (

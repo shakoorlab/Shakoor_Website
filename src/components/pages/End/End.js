@@ -1,6 +1,6 @@
 import React from "react";
 // import { Heading } from "../About/Heading";
-import { contact } from "../../components/data/data";
+import { contact } from "../../data/data";
 import "./End.css";
 // import ContactHero from "./ContactHero";
 
