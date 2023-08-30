@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./TeamHero.css";
+import "./ContactHero.css";
 import "../../../App.css";
 // import { Button } from "../Button/Button";
 
-function TeamHero() {
+function ContactHero() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -18,11 +18,9 @@ function TeamHero() {
 
   return (
     <div className="hero-container">
-      <video src="/videos/team1.mov" autoPlay loop muted />
-      <h1 className={isVisible ? "" : "fade-out"}>Meet the Team</h1>
-      <p className={isVisible ? "" : "fade-out"}> Driven by a shared vision</p>
-      {/* Diverse minds, unified mission */}
-      {/* Driven by a shared vision */}
+      <video src="/videos/team_snippet7.mp4" autoPlay loop muted />
+      <h1 className={isVisible ? "" : "fade-out"}>Contact Us</h1>
+      <p className={isVisible ? "" : "fade-out"}> We want to hear from you</p>
       <div className="hero-btns">
         {/* <Button
           className="btns"
@@ -37,4 +35,4 @@ function TeamHero() {
   );
 }
 
-export default TeamHero;
+export default ContactHero;

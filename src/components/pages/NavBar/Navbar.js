@@ -9,7 +9,10 @@ function Navbar() {
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    window.scrollTo(0, 0);
+  };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -21,9 +24,16 @@ function Navbar() {
 
   useEffect(() => {
     showButton();
+
+    // Adding the event listener
+    window.addEventListener("resize", showButton);
+
+    // Returning a cleanup function to remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", showButton);
+    };
   }, []);
 
-  window.addEventListener("resize", showButton);
   //-----------------------------------------------------
 
   return (
@@ -61,7 +71,7 @@ function Navbar() {
 
             <li>
               <Link
-                to="/contact-us"
+                to="/contact"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >

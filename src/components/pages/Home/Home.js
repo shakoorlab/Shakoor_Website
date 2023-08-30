@@ -1,17 +1,14 @@
-import React, { useRef } from "react";
-
 import "../../../App.css";
 import Cards from "../Article/Cards";
 import HeroSection from "../Hero/HeroSection";
 import QuoteHero from "../Quote1/QuoteHero";
-import { Contact } from "../Contact/Contact";
+// import { Contact } from "../Contact/Contact";
 import smol_team from "../../../assets/img.jpg";
 import sorghum from "../../../assets/sorghum.jpg";
 import Slider from "../Slider/Slider";
+import { End } from "../../End/End";
 
 function Home() {
-  const contactRef = useRef(null);
-
   return (
     <>
       <HeroSection />
@@ -32,7 +29,7 @@ function Home() {
       />
       <Cards />
       <QuoteHero />
-      <Contact />
+      <End />
     </>
   );
 }

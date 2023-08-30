@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 video {
   object-fit: cover;
   width: 100%;

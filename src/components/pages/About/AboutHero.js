@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AboutHero.css";
 import "../../../App.css";
-import { Button } from "../Button/Button";
+// import { Button } from "../Button/Button";
 
 function AboutHero() {
   const [isVisible, setIsVisible] = useState(true);
@@ -20,14 +20,14 @@ function AboutHero() {
       <h1 className={isVisible ? "" : "fade-out"}>About Us</h1>
       <p className={isVisible ? "" : "fade-out"}> Learn more about the lab</p>
       <div className="hero-btns">
-        <Button
+        {/* <Button
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
           fadeClass={isVisible ? "" : "fade-out"}
         >
           Explore
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

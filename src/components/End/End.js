@@ -1,13 +1,13 @@
 import React from "react";
 // import { Heading } from "../About/Heading";
-import { contact } from "../../data/data";
-import "./Contact.css";
-import ContactHero from "./ContactHero";
+import { contact } from "../../components/data/data";
+import "./End.css";
+// import ContactHero from "./ContactHero";
 
-export const Contact = () => {
+export const End = () => {
   return (
     <>
-      <ContactHero />
+      {/* <ContactHero /> */}
       <div className="contact ">
         <div className="container">
           {/* <Heading title="Keep In Touch" /> */}

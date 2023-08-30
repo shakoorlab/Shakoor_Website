@@ -27,7 +27,7 @@ export const About = () => {
       />
       <Slider
         imageSrc={close}
-        title={"Who we're partnered with."}
+        title={"Our Collaborators."}
         subtitle={
           "In a collaboration with the Salk Institute of Biological Studies, advanced tools, methods, and technologies are employed to study and enhance the ability of Sorghum bicolor to capture and store carbon dioxide in its roots, shoots, and leaves."
         }
