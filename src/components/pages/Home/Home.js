@@ -2,11 +2,9 @@ import "../../../App.css";
 import Cards from "../Article/Cards";
 import HeroSection from "../Hero/HeroSection";
 import QuoteHero from "../Quote1/QuoteHero";
-// import { Contact } from "../Contact/Contact";
-import smol_team from "../../../assets/img.jpg";
-import sorghum from "../../../assets/sorghum.jpg";
+import smol_team from "../../../assets/img.webp";
+import sorghum from "../../../assets/sorghum.webp";
 import Slider from "../Slider/Slider";
-// import { End } from "../End/End";
 
 function Home() {
   return (
@@ -29,7 +27,6 @@ function Home() {
       />
       <Cards />
       <QuoteHero />
-      {/* <End /> */}
     </>
   );
 }

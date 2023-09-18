@@ -5,7 +5,7 @@ import "../../../App.css";
 function QuoteHero() {
   return (
     <div className="about-hero-container">
-      <img src="/images/quote1/background.jpg" alt="Bee pollinating sorghum" />
+      <img src="/images/quote1/background.webp" alt="Bee pollinating sorghum" />
       <div className="about-text-container">
         {/* <h1>Improving the Planet</h1> */}
         {/* Maybe a quote that says "The crop of the future" */}

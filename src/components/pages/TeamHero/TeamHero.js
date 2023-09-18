@@ -21,18 +21,7 @@ function TeamHero() {
       <video src="/videos/team1.mov" autoPlay loop muted />
       <h1 className={isVisible ? "" : "fade-out"}>Meet the Team</h1>
       <p className={isVisible ? "" : "fade-out"}> Driven by a shared vision</p>
-      {/* Diverse minds, unified mission */}
-      {/* Driven by a shared vision */}
-      <div className="hero-btns">
-        {/* <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-          fadeClass={isVisible ? "" : "fade-out"}
-        >
-          Explore
-        </Button> */}
-      </div>
+      <div className="hero-btns"></div>
     </div>
   );
 }
