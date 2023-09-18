@@ -12,10 +12,6 @@ import {
   AddLocationAltOutlined,
   PhoneIphone,
   EmailOutlined,
-  Facebook,
-  Twitter,
-  Instagram,
-  YouTube,
 } from "@mui/icons-material";
 
 export const about = [

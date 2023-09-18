@@ -20,7 +20,7 @@ function HeroSection() {
       <h1 className={isVisible ? "" : "fade-out"}>Shakoor Lab</h1>
       <p className={isVisible ? "" : "fade-out"}>
         {" "}
-        Where Sorghum Meets Science
+        Breeding innovation, tech, and resilience
       </p>
 
       {/* Rooted in Research */}
