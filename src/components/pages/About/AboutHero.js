@@ -16,7 +16,7 @@ function AboutHero() {
 
   return (
     <div className="hero-container">
-      <video src="/videos/home.mov" autoPlay loop muted />
+      <video src="/videos/home.mp4" autoPlay muted />
       <h1 className={isVisible ? "" : "fade-out"}>About Us</h1>
       <p className={isVisible ? "" : "fade-out"}> Learn more about the lab</p>
     </div>
