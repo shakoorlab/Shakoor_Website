@@ -15,7 +15,7 @@ function HeroSection() {
 
   return (
     <div className="hero-container">
-      <video src="/videos/home.mov" autoPlay loop muted />
+      <video src="/videos/JandBsnippet.mp4" autoPlay loop muted />
       <h1 className={isVisible ? "" : "fade-out"}>Shakoor Lab</h1>
       <p className={isVisible ? "" : "fade-out"}>
         {" "}
