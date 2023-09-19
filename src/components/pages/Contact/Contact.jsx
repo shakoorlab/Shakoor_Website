@@ -1,35 +1,120 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { contact } from "../../data/data";
 import "./Contact.css";
-// import ContactHero from "./ContactHero";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
+  const [errors, setErrors] = useState({});
+  // --------------------------------------form validation/emailjs logic---------------------------------------
+  const form = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+
+  const validateEmail = (email) => {
+    const re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let validationErrors = {};
+
+    if (!nameRef.current.value) {
+      validationErrors.name = "Name is required.";
+    }
+    if (!validateEmail(emailRef.current.value)) {
+      validationErrors.email = "Valid email is required.";
+    }
+    if (!subjectRef.current.value) {
+      validationErrors.subject = "Subject is required.";
+    }
+    if (!messageRef.current.value) {
+      validationErrors.message = "Message is required.";
+    }
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    // Proceed with sending the email if there are no validation errors
+    emailjs
+      .sendForm(
+        "service_s2mx5zp",
+        "template_q209fem",
+        form.current,
+        "zymaNpU96mZfAfLMk"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+
+          // Clear the form after successful submission
+          nameRef.current.value = "";
+          emailRef.current.value = "";
+          subjectRef.current.value = "";
+          messageRef.current.value = "";
+          setErrors({}); // Also clear any errors
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  // --------------------------------------form validation code---------------------------------------
+
   return (
     <>
-      {/* <ContactHero /> */}
       <div className="contact ">
         <div className="container">
           <div className="content flexsb">
             <div className="right">
-              <form>
+              <form ref={form} onSubmit={handleSubmit}>
                 <div className="flex">
-                  <input type="text" placeholder="Name" data-aos="flip-left" />
                   <input
+                    ref={nameRef}
+                    type="text"
+                    name="user_name"
+                    placeholder={errors.name || "Name"}
+                    data-aos="flip-left"
+                    style={{ background: errors.name ? "#FFE6E6" : "white" }}
+                  />
+
+                  <input
+                    ref={emailRef}
+                    name="user_email"
                     type="email"
-                    placeholder="Email"
+                    placeholder={errors.email || "Email"}
                     data-aos="flip-right"
                     defaultValue=""
+                    style={{ background: errors.email ? "#FFE6E6" : "white" }}
                   />
                 </div>
-                <input type="email" placeholder="Subject" data-aos="flip-up" />
+
+                <input
+                  ref={subjectRef}
+                  name="subject"
+                  type="text"
+                  placeholder={errors.subject || "Subject"}
+                  data-aos="flip-up"
+                  style={{ background: errors.subject ? "#FFE6E6" : "white" }}
+                />
+
                 <textarea
-                  name=""
-                  id=""
+                  ref={messageRef}
+                  placeholder={errors.message || "Your message"}
+                  name="message"
                   cols="30"
                   rows="10"
                   data-aos="flip-down"
+                  style={{ background: errors.message ? "#FFE6E6" : "white" }}
                 ></textarea>
-                <button className="submit" data-aos="zoom-in-up">
+
+                <button className="submit" data-aos="zoom-in-up" type="submit">
                   Contact
                 </button>
               </form>
