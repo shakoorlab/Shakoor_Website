@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./HeroSection.css";
 import "../../../App.css";
-// import { Button } from "../Button/Button";
 
 function HeroSection() {
   const [isVisible, setIsVisible] = useState(true);
@@ -22,19 +21,6 @@ function HeroSection() {
         {" "}
         Breeding innovation, tech, and resilience
       </p>
-
-      {/* Rooted in Research */}
-      {/* Pioneering Plant Progress */}
-      {/* <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-          fadeClass={isVisible ? "" : "fade-out"}
-        >
-          Explore
-        </Button>
-      </div> */}
     </div>
   );
 }

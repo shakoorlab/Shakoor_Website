@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./TeamHero.css";
 import "../../../App.css";
-// import { Button } from "../Button/Button";
 
 function TeamHero() {
   const [isVisible, setIsVisible] = useState(true);
@@ -17,11 +16,13 @@ function TeamHero() {
   //-------------------------------------------
 
   return (
-    <div className="hero-container">
+    <div className="team-hero-container">
       <video src="/videos/team1.mov" autoPlay loop muted />
-      <h1 className={isVisible ? "" : "fade-out"}>Meet the Team</h1>
-      <p className={isVisible ? "" : "fade-out"}> Driven by a shared vision</p>
-      <div className="hero-btns"></div>
+      <h1 className={isVisible ? "" : "team-fade-out"}>Meet the Team</h1>
+      <p className={isVisible ? "" : "team-fade-out"}>
+        {" "}
+        Driven by a shared vision
+      </p>
     </div>
   );
 }

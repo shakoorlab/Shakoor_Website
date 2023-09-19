@@ -19,16 +19,6 @@ function AboutHero() {
       <video src="/videos/home.mov" autoPlay loop muted />
       <h1 className={isVisible ? "" : "fade-out"}>About Us</h1>
       <p className={isVisible ? "" : "fade-out"}> Learn more about the lab</p>
-      <div className="hero-btns">
-        {/* <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-          fadeClass={isVisible ? "" : "fade-out"}
-        >
-          Explore
-        </Button> */}
-      </div>
     </div>
   );
 }
