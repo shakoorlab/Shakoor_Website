@@ -17,7 +17,7 @@ function TeamHero() {
 
   return (
     <div className="team-hero-container">
-      <video src="/videos/team1.mov" autoPlay loop muted />
+      <video src="/videos/JandBsnippet.mp4" autoPlay muted />
       <h1 className={isVisible ? "" : "team-fade-out"}>Meet the Team</h1>
       <p className={isVisible ? "" : "team-fade-out"}>
         {" "}
