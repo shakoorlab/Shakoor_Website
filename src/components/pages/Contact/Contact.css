@@ -51,7 +51,7 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); /* Horizontal, Vertical, Blur, Shadow Color */
 }
 
-.submit {
+.contact-submit {
   font-size: 18px;
   background-color: #e0a80d;
   color: #fff;
@@ -60,9 +60,10 @@
   margin-top: 20px;
   cursor: pointer;
   transition: color 0.5s; /* Smooth transition effect */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-.submit:hover {
+.contact-submit:hover {
   background-color: #f5be26;
   color: #fff;
 }

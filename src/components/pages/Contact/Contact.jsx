@@ -114,7 +114,11 @@ export const Contact = () => {
                   style={{ background: errors.message ? "#FFE6E6" : "white" }}
                 ></textarea>
 
-                <button className="submit" data-aos="zoom-in-up" type="submit">
+                <button
+                  className="contact-submit"
+                  data-aos="zoom-in-up"
+                  type="submit"
+                >
                   Contact
                 </button>
               </form>
