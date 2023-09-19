@@ -1,7 +1,6 @@
 /*---------contact-------------*/
 .contact {
-  margin: 20px 0;
-  backdrop-filter: blur(17px);
+  background-color: #797979;
 }
 .contact .right,
 .contact .left {
@@ -20,12 +19,6 @@
   margin: 10px 0;
   border-radius: 5px;
 }
-/* .heading {
-  font-size: 30px;
-  color: #e0a80d;
-  text-align: center;
-  margin-bottom: 20px;
-} */
 .contact .container {
   max-width: 80%;
   margin: auto;
@@ -34,6 +27,7 @@
   display: flex;
   justify-content: center;
 }
+
 .flex {
   display: flex;
 }
@@ -43,21 +37,34 @@
 .box p {
   color: #e0a80d;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 25px;
   margin: 20px 0;
 }
 .box i {
   color: #fff;
 }
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); /* Horizontal, Vertical, Blur, Shadow Color */
+}
+
 .submit {
-  font-size: 17px;
+  font-size: 18px;
   background-color: #e0a80d;
   color: #fff;
   padding: 15px 50px;
   border-radius: 50px;
   margin-top: 20px;
   cursor: pointer;
+  transition: color 0.5s; /* Smooth transition effect */
+}
+
+.submit:hover {
+  background-color: #f5be26;
+  color: #fff;
 }
 /*---------contact-------------*/
 @media screen and (max-width: 768px) {
@@ -65,6 +72,6 @@
     width: 40%;
   }
   .box p {
-    font-size: 10.5px;
+    font-size: 13px;
   }
 }

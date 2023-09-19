@@ -1,16 +1,14 @@
 import React from "react";
-// import { Heading } from "../About/Heading";
 import { contact } from "../../data/data";
 import "./Contact.css";
-import ContactHero from "./ContactHero";
+// import ContactHero from "./ContactHero";
 
 export const Contact = () => {
   return (
     <>
-      <ContactHero />
+      {/* <ContactHero /> */}
       <div className="contact ">
         <div className="container">
-          {/* <Heading title="Keep In Touch" /> */}
           <div className="content flexsb">
             <div className="right">
               <form>
@@ -20,6 +18,7 @@ export const Contact = () => {
                     type="email"
                     placeholder="Email"
                     data-aos="flip-right"
+                    defaultValue=""
                   />
                 </div>
                 <input type="email" placeholder="Subject" data-aos="flip-up" />

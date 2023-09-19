@@ -2,8 +2,17 @@ import React from "react";
 import "./Footer.css";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  // --------------------------------------------------- logic for button -----------------------
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact"); // This will navigate to the Contact page
+  };
+  // --------------------------------------------------- logic for button -----------------------
+
   return (
     <div className="footer-container">
       <section className="footer-subscription">
@@ -13,13 +22,13 @@ function Footer() {
         <p className="footer-subscription-text">You can reach us here.</p>
         <div className="input-areas">
           <form>
-            <input
-              className="footer-input"
-              name="email"
-              type="email"
-              placeholder="Your Email"
-            />
-            <Button buttonStyle="btn--outline">Contact</Button>
+            <Button
+              buttonStyle="btn--outline"
+              onClick={handleContactClick}
+              type="submit"
+            >
+              Contact
+            </Button>
           </form>
         </div>
       </section>

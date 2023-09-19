@@ -12,7 +12,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { About } from "./components/pages/About/About";
 import { Contact } from "./components/pages/Contact/Contact";
-import { End } from "./components/pages/End/End";
 
 function App() {
   useEffect(() => {
@@ -29,7 +28,6 @@ function App() {
           <Route path="#" element={<QuoteHero />} />
           <Route path="/team" element={<Team />} />
           <Route path="/news" element={<Cards />} />
-          <Route path="#" element={<End />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
