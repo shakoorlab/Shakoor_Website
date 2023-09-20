@@ -156,3 +156,39 @@
     transition: 250ms;
   }
 }
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 414px) {
+  .nav-menu {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 390px) {
+  .nav-menu {
+    height: 60vh;
+    width: 105%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav-menu {
+    height: 75vh;
+    width: 105%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav-links-mobile {
+    font-size: 1.2rem; /* Adjust mobile link font size */
+  }
+
+  .nav-menu {
+    height: 70vh;
+    width: 105%;
+  }
+  .navbar-container {
+    width: 100px;
+  }
+}

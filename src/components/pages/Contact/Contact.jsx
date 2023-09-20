@@ -127,8 +127,8 @@ export const Contact = () => {
               {contact.map((item) => (
                 <div className="box" data-aos="zoom-in">
                   <i>{item.icon}</i>
-                  <p>{item.text1}</p>
-                  <p>{item.text2}</p>
+                  <p className="email">{item.text1}</p>
+                  <p className="email">{item.text2}</p>
                 </div>
               ))}
             </div>

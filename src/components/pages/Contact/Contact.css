@@ -40,6 +40,7 @@
   font-weight: 400;
   line-height: 25px;
   margin: 20px 0;
+  /* word-wrap: break-word; */
 }
 .box i {
   color: #fff;
@@ -78,5 +79,8 @@
   }
   .box p {
     font-size: 13px;
+  }
+  .box p.email {
+    word-wrap: break-word;
   }
 }
