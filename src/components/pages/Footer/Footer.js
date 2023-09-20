@@ -10,6 +10,7 @@ function Footer() {
 
   const handleContactClick = () => {
     navigate("/contact"); // This will navigate to the Contact page
+    window.scrollTo(0, 0);
   };
   // --------------------------------------------------- logic for button -----------------------
 
