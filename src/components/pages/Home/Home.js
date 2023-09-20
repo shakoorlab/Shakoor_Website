@@ -5,22 +5,22 @@ import QuoteHero from "../Quote1/QuoteHero";
 import smol_team from "../../../assets/img.webp";
 import sorghum from "../../../assets/sorghum.webp";
 import Slider from "../Slider/Slider";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function Home() {
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setWindowWidth(window.innerWidth);
-  //   };
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-  //   window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <HeroSection />
@@ -41,7 +41,7 @@ function Home() {
       />
       <Cards />
       {/* Conditionally render the QuoteHero component */}
-      <QuoteHero />
+      {windowWidth > 767 && <QuoteHero />}
     </>
   );
 }
