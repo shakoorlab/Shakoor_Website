@@ -18,11 +18,11 @@ function AboutHero() {
 
   return (
     <div className="about-hero-container">
-      <img
+      {/* <img
         src="/images/about_us/about.webp"
         alt="About"
         className="about-image"
-      />
+      /> */}
 
       <h1 className={isVisible ? "" : "fade-out"}>About Us</h1>
       <p className={isVisible ? "" : "fade-out"}> Learn more about the lab</p>

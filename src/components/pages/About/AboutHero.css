@@ -6,6 +6,15 @@
   z-index: -1;
 } */
 
+body {
+  /* Or the selector for your main container */
+  background-image: url("../../../../public/images/about_us/about.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* This ensures the background stays in place while scrolling */
+}
+
 .about-hero-container {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
   height: 100vh;
@@ -18,13 +27,13 @@
   object-fit: contain;
 }
 
-.about-image {
+/* .about-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -1;
-}
+} */
 
 .about-hero-container > h1 {
   color: #fff;
@@ -63,11 +72,5 @@
 
   .about-hero-container > p {
     font-size: 30px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .about-hero-container {
-    width: 100%;
-    height: 85vh;
   }
 }
