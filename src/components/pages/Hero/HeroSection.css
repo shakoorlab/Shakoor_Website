@@ -1,14 +1,6 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  /* Or the selector for your main container */
-  background-image: url("/images/home/home.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed; /* This ensures the background stays in place while scrolling */
-}
 
 video {
   object-fit: cover;
@@ -29,13 +21,13 @@ video {
   object-fit: contain;
   position: relative;
 }
-/* .hero-image {
+.hero-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: -1;
-} */
+}
 
 .hero-container > h1 {
   color: #fff;
