@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
 .hero-container {
   height: 100vh;
   width: 100%;
@@ -21,7 +13,8 @@ video {
   object-fit: contain;
   position: relative;
 }
-.hero-image {
+.hero-image,
+video {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -76,7 +69,12 @@ video {
     font-size: 20px;
   }
 }
-
+@media screen and (max-width: 375px) {
+  .hero-container {
+    width: 100%;
+    height: 85vh;
+  }
+}
 @media screen and (max-width: 368px) {
   .hero-container {
     width: 105%;
