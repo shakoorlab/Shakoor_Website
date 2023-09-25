@@ -68,3 +68,13 @@ video {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 368px) {
+  .hero-container {
+    width: 105%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .hero-container {
+    width: 115%;
+  }
+}
