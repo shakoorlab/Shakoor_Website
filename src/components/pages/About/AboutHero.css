@@ -67,6 +67,6 @@
 }
 @media screen and (max-width: 375px) {
   .about-hero-container {
-    width: 115%;
+    width: 100%;
   }
 }
