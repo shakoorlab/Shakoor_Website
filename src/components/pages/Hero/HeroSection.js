@@ -4,11 +4,13 @@ import "../../../App.css";
 
 function HeroSection() {
   //----------------------------------logic for screen determination------------------
-  const [isLargerScreen, setIsLargerScreen] = useState(window.innerWidth > 768); // Assuming 768px as the breakpoint
+  const [isLargerScreen, setIsLargerScreen] = useState(
+    window.innerWidth > 1200
+  ); // Assuming 768px as the breakpoint
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLargerScreen(window.innerWidth > 768);
+      setIsLargerScreen(window.innerWidth > 1200);
     };
 
     window.addEventListener("resize", handleResize);
