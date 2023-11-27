@@ -77,6 +77,11 @@
   .contact .left {
     display: none;
   }
+  .contact .right {
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
