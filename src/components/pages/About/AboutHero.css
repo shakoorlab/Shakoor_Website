@@ -62,7 +62,7 @@
   }
 
   .about-hero-container > p {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 375px) {
