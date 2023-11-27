@@ -116,8 +116,8 @@ function Team() {
             />
           </ul>
         </div>
-        <LabAlumni />
       </div>
+      <LabAlumni />
     </>
   );
 }
