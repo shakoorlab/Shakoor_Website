@@ -2,6 +2,7 @@ import React from "react";
 import TeamItem from "./TeamItem";
 import "./Team.css";
 import TeamHero from "../TeamHero/TeamHero";
+import LabAlumni from "./LabAlumni";
 
 function Team() {
   return (
@@ -70,32 +71,6 @@ function Team() {
               label="Research Associate"
             />
             <TeamItem
-              src="images/team_headshots/Rachel_Lange.webp"
-              alt="Rachel Lange"
-              text="Rachel Lange"
-              label="Laboratory Technician"
-            />
-            <TeamItem
-              src="images/team_headshots/Amy_Pfeifer.webp"
-              alt="Amy Pfeifer"
-              text="Amy Pfeifer"
-              label="Laboratory Technician"
-            />
-            <TeamItem
-              src="images/team_headshots/Brendan_Eddingfield.webp"
-              alt="Brendan Eddingfield"
-              text="Brendan Eddingfield"
-              label="Laboratory Technician"
-            />
-          </ul>
-          <ul className="cards__items">
-            <TeamItem
-              src="images/team_headshots/Zander_Hayes.webp"
-              alt="Zander Hayes"
-              text="Zander Hayes"
-              label="Laboratory Technician"
-            />
-            <TeamItem
               src="images/team_headshots/Audrey_Oldani.webp"
               alt="Audrey Oldani"
               text="Audrey Oldani"
@@ -105,7 +80,7 @@ function Team() {
               src="images/team_headshots/Ella_Marks.webp"
               alt="Ella Marks"
               text="Ella Marks"
-              label="Laboratory Technician"
+              label="Laboratory Assistant"
             />
             <TeamItem
               src="images/team_headshots/Colton_Burris.webp"
@@ -116,31 +91,32 @@ function Team() {
           </ul>
           <ul className="cards__items">
             <TeamItem
-              src="images/team_headshots/Aaron_Fackler.webp"
-              alt="Aaron Fackler"
-              text="Aaron Fackler"
-              label="Laboratory Technician"
-            />
-            <TeamItem
-              src="images/team_headshots/"
+              src="images/team_headshots/Samantha_Aarons.webp"
               alt="Samantha Aarons"
               text="Samantha Aarons"
               label="Laboratory Technician"
             />
             <TeamItem
-              src="images/team_headshots/"
+              src="images/team_headshots/Neil_Docherty.webp"
               alt="Neil Docherty"
               text="Neil Docherty"
-              label="Laboratory Technician"
+              label="Field Technician"
             />
             <TeamItem
-              src="images/team_headshots/"
+              src="images/team_headshots/Danforth_Logo.webp"
               alt="Jacob Sterzik"
               text="Jacob Sterzik"
               label="Laboratory Technician"
             />
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="Lee Dobson"
+              text="Lee Dobson"
+              label="Laboratory Technician"
+            />
           </ul>
         </div>
+        <LabAlumni />
       </div>
     </>
   );

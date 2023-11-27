@@ -37,8 +37,12 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">Research</Link>
-            <Link to="/">Projects</Link>
+            <Link to="https://www.danforthcenter.org/our-work/principal-investigators/nadia-shakoor/">
+              Research
+            </Link>
+            <Link to="https://www.danforthcenter.org/our-work/principal-investigators/nadia-shakoor/">
+              Projects
+            </Link>
             <Link to="https://www.danforthcenter.org/news/building-our-culture/#:~:text=Establishment%20of%20Center%20Core%20Values,how%20we%20do%20our%20work.">
               Values
             </Link>
@@ -48,7 +52,7 @@ function Footer() {
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
             <Link to="https://www.danforthcenter.org/careers/?gclid=Cj0KCQjwrfymBhCTARIsADXTabnqnh5D5OdQUKWDq65rwGw7AWuzKlXLfXD-TbGLckbfVdL-bvZegjMaAiRAEALw_wcB">
               Careers
             </Link>
@@ -67,7 +71,7 @@ function Footer() {
           <div class="footer-link-items">
             <h2>Social Media</h2>
             <Link to="https://github.com/shakoorlab">Github</Link>
-            <Link to="/">LinkedIn</Link>
+            <Link to="https://www.linkedin.com/in/nadiashakoor/">LinkedIn</Link>
           </div>
         </div>
       </div>
@@ -91,7 +95,7 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link instagram"
-              to="/"
+              to="https://www.instagram.com/"
               target="_blank"
               aria-label="Instagram"
             >
@@ -99,7 +103,7 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link youtube"
-              to="/"
+              to="https://www.youtube.com/"
               target="_blank"
               aria-label="Youtube"
             >
@@ -107,7 +111,7 @@ function Footer() {
             </Link>
             <Link
               class="social-icon-link twitter"
-              to="/"
+              to="https://twitter.com/"
               target="_blank"
               aria-label="LinkedIn"
             >
