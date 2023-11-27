@@ -73,6 +73,12 @@
   font-size: 12px;
 }
 /*---------contact-------------*/
+@media screen and (max-width: 500px) {
+  .contact .left {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .left {
     width: 40%;
