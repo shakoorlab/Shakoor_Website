@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
   height: 83px;
-  max-width: 1500px;
+  /* max-width: 1500px; */
 }
 
 .navbar-logo {
@@ -164,5 +164,10 @@
 @media screen and (max-width: 500px) {
   .navbar-logo {
     transform: translate(10%, 50%);
+  }
+}
+
+@media screen and (min-width: 2001px) {
+  .navbar-container {
   }
 }
