@@ -166,8 +166,3 @@
     transform: translate(10%, 50%);
   }
 }
-
-@media screen and (min-width: 2001px) {
-  .navbar-container {
-  }
-}
