@@ -71,19 +71,19 @@ function LabAlumni() {
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Jasmine Saliba"
               text="Jasmine Saliba"
-              label="Highschool Intern"
+              label="High school Intern"
             />
             <TeamItem
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Heidi Gaertner"
               text="Heidi Gaertner"
-              label="Highschool Intern"
+              label="High school Intern"
             />
             <TeamItem
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Addison Engelmeyer"
               text="Addison Engelmeyer"
-              label="Highschool Intern"
+              label="High school Intern"
             />
           </ul>
         </div>
