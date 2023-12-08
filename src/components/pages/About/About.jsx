@@ -4,6 +4,7 @@ import AboutHero from "./AboutHero";
 import plants from "../../../assets/img2.webp";
 import far from "../../../assets/img3.webp";
 import close from "../../../assets/img4.webp";
+import sorghum from "../../../assets/sorghum.webp";
 import Slider from "../Slider/Slider";
 
 export const About = () => {
@@ -33,7 +34,7 @@ export const About = () => {
         }
       />
       <Slider
-        imageSrc={far}
+        imageSrc={sorghum}
         title={"Key Research Questions."}
         // subtitle={
         //   " Key overarching research questions that drive the activities of the lab include: "
