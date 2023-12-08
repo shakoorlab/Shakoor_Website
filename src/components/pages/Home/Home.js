@@ -26,7 +26,7 @@ function Home() {
       <HeroSection />
       <Slider
         imageSrc={smol_team}
-        title={"More than just scientist."}
+        title={"More than just scientists."}
         subtitle={
           "A multicultural and multidisciplinary group of professionals dedicated to advancing plant science "
         }
