@@ -32,6 +32,23 @@ export const About = () => {
           "In a collaboration with the Salk Institute of Biological Studies, advanced tools, methods, and technologies are employed to study and enhance the ability of Sorghum bicolor to capture and store carbon dioxide in its roots, shoots, and leaves."
         }
       />
+      <Slider
+        imageSrc={far}
+        title={"Key Research Questions."}
+        // subtitle={
+        //   " Key overarching research questions that drive the activities of the lab include: "
+        // }
+        questionOne={
+          "1) How can we better leverage genomics data in molecular breeding programs with high-throughput phenomics and environmental data to rapidly generate datasets for candidate gene identification?"
+        }
+        questionTwo={
+          "2) How can we use advances in sensors and sensing technologies to bridge the controlled environment to field knowledge gap?"
+        }
+        questionThree={
+          "3) How can we leverage advances in digital agriculture and geospatial systems to fully capture the effects of genotype, environment and management (GxExM) to breed better crops and build models of sustainability for farmers?"
+        }
+        flipped={true}
+      />
     </>
   );
 };
