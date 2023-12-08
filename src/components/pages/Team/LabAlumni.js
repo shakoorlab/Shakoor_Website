@@ -63,6 +63,32 @@ function LabAlumni() {
           <ul className="cards__items">
             <TeamItem
               src="images/team_headshots/Danforth_Logo.webp"
+              alt="Devin Scharer"
+              text="Devin Scharer"
+              label="High School Intern"
+            />
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="Victoria Frerichs"
+              text="Victoria Frerichs"
+              label="High School Intern"
+            />
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="Emma Gandolfo"
+              text="Emma Gandolfo"
+              label="Laboratory Technician"
+            />
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="John Bao"
+              text="John Bao"
+              label="Laboratory Technician"
+            />
+          </ul>
+          <ul className="cards__items">
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
               alt="Gabriel Bernstein"
               text="Gabriel Bernstein"
               label="Intern"
@@ -71,19 +97,19 @@ function LabAlumni() {
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Jasmine Saliba"
               text="Jasmine Saliba"
-              label="High school Intern"
+              label="High School Intern"
             />
             <TeamItem
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Heidi Gaertner"
               text="Heidi Gaertner"
-              label="High school Intern"
+              label="High School Intern"
             />
             <TeamItem
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Addison Engelmeyer"
               text="Addison Engelmeyer"
-              label="High school Intern"
+              label="High Schoolhool Intern"
             />
           </ul>
         </div>
