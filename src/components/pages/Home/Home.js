@@ -28,14 +28,14 @@ function Home() {
         imageSrc={smol_team}
         title={"More than just scientists."}
         subtitle={
-          "A multicultural and multidisciplinary group of professionals dedicated to advancing plant science "
+          "A multicultural and multidisciplinary group of professionals dedicated to advancing plant science."
         }
       />
       <Slider
         imageSrc={sorghum}
         title={"More than just a plant."}
         subtitle={
-          "Sorghum is a versatile and drought-resistant cereal grain vital for food, fodder, and biofuel in many arid and semi-arid regions of the world.."
+          "Sorghum is a versatile and drought-resistant cereal grain vital for food, feed, and biofuel in many arid and semi-arid regions of the world."
         }
         flipped={true}
       />
