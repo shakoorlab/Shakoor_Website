@@ -14,7 +14,7 @@ export const About = () => {
         imageSrc={plants}
         title={"Who we are."}
         subtitle={
-          "Established in 2021, the Shakoor lab at the Donald Danforth Plant Science Center is focused on creating a high-impact research program that addresses challenges in sustainable cropping systems through the integration and application of diverse data streams."
+          "Established in 2021, the Shakoor lab at the Donald Danforth Plant Science Center is working hard to create a high-impact research program that integrates and applies data streams from diverse technologies and disciplines towards addressing specific, real-world challenges in sustainable cropping systems."
         }
       />
       <Slider
