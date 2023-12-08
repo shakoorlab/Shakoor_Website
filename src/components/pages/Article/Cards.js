@@ -41,7 +41,7 @@ function Cards() {
           <CardItem
             src="images/articles/article_1.webp"
             alt="Image of PheNode in field "
-            text="Salk Researchers Launch Colaboration"
+            text="Salk Researchers Launch Collaboration"
             label="September 14, 2021"
             path="https://www.salk.edu/news-release/salk-plant-researchers-launch-collaboration-to-breed-carbon-capturing-sorghum/"
           />
