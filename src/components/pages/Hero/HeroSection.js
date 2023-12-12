@@ -40,7 +40,7 @@ function HeroSection() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 7000); // Set the delay to 10 seconds (10,000 milliseconds)
+    }, 5000); // Set the delay to 10 seconds (10,000 milliseconds)
 
     return () => clearTimeout(timer); // Cleanup the timer to avoid any potential issues
   }, []); // The empty dependency array ensures the effect only runs once after the component mounts
