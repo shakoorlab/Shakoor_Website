@@ -49,9 +49,13 @@ function HeroSection() {
   return (
     <div className="hero-container">
       {isLargerScreen ? (
-        <video src="/videos/background_video.mp4" autoPlay loop muted />
+        <video src="/videos/2.mov" autoPlay loop muted />
       ) : (
-        <img src="/images/home/home.webp" alt="Hero" className="hero-image" />
+        <img
+          src="/images/home/background_image.webp"
+          alt="Hero"
+          className="hero-image"
+        />
       )}
       <h1 className={isVisible ? "" : "fade-out"}>Shakoor Lab</h1>
       <p className={isVisible ? "" : "fade-out"}>
