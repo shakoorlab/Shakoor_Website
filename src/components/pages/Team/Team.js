@@ -22,7 +22,7 @@ function Team() {
               src="images/team_headshots/Jocelyn_Saxton.webp"
               alt="Jocelyn Saxton"
               text="Jocelyn Saxton"
-              label="Research Associate"
+              label="Lab Manager"
             />
             <TeamItem
               src="images/team_headshots/Marie_De.webp"
