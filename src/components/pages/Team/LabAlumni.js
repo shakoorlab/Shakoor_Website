@@ -109,7 +109,7 @@ function LabAlumni() {
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Addison Engelmeyer"
               text="Addison Engelmeyer"
-              label="High Schoolhool Intern"
+              label="High School Intern"
             />
           </ul>
         </div>
