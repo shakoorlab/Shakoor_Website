@@ -91,7 +91,7 @@ function LabAlumni() {
               src="images/team_headshots/Danforth_Logo.webp"
               alt="Gabriel Bernstein"
               text="Gabriel Bernstein"
-              label="Intern"
+              label="High School Intern"
             />
             <TeamItem
               src="images/team_headshots/Danforth_Logo.webp"
