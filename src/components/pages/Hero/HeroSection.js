@@ -49,7 +49,7 @@ function HeroSection() {
   return (
     <div className="hero-container">
       {isLargerScreen ? (
-        <video src="/videos/background_video.mp4" autoPlay loop muted />
+        <video src="/videos/background_video.webm" autoPlay loop muted />
       ) : (
         <img
           src="/images/home/background_image.webp"
