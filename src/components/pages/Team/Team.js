@@ -109,7 +109,7 @@ function Team() {
               label="Laboratory Technician"
             />
             <TeamItem
-              src="images/team_headshots/Danforth_Logo.webp"
+              src="images/team_headshots/Lee_Dobson.webp"
               alt="Lee Dobson"
               text="Lee Dobson"
               label="Laboratory Technician"
