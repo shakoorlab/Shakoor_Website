@@ -7,7 +7,7 @@ import LabAlumni from "./LabAlumni";
 function Team() {
   return (
     <>
-      <TeamHero /> {/* Inserting the TeamHero component here */}
+      <TeamHero />
       <div className="cards">
         <h1>Our Team</h1>
         <div className="cards__wrapper">
@@ -91,12 +91,6 @@ function Team() {
           </ul>
           <ul className="cards__items">
             <TeamItem
-              src="images/team_headshots/Samantha_Aarons.webp"
-              alt="Samantha Aarons"
-              text="Samantha Aarons"
-              label="Laboratory Technician"
-            />
-            <TeamItem
               src="images/team_headshots/Neil_Docherty.webp"
               alt="Neil Docherty"
               text="Neil Docherty"
@@ -112,6 +106,12 @@ function Team() {
               src="images/team_headshots/Lee_Dobson.webp"
               alt="Lee Dobson"
               text="Lee Dobson"
+              label="Laboratory Technician"
+            />
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="Keiko Farah"
+              text="Keiko Farah"
               label="Laboratory Technician"
             />
           </ul>

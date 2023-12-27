@@ -25,13 +25,6 @@ h1 {
   margin-bottom: 24px;
 }
 
-.cards__item {
-  display: flex;
-  flex: 1;
-  margin: 0 1rem;
-  border-radius: 10px;
-}
-
 /* //? this is for the little blue card that displays at the bottom left of the card */
 .cards__item__link {
   display: flex;
@@ -105,6 +98,12 @@ h1 {
   font-size: 23px;
   line-height: 24px;
   text-align: center;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
 }
 
 @media only screen and (min-width: 1200px) {
