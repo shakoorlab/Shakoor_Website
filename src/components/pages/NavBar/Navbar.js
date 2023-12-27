@@ -42,7 +42,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Shakoor Lab
-            <i className="fa-solid fa-seedling" data-aos="fade-right" />
+            <i className="fa-solid fa-seedling" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
