@@ -7,7 +7,7 @@ import LabAlumni from "./LabAlumni";
 function Team() {
   return (
     <>
-      <TeamHero /> {/* Inserting the TeamHero component here */}
+      <TeamHero />
       <div className="cards">
         <h1>Our Team</h1>
         <div className="cards__wrapper">
@@ -30,14 +30,15 @@ function Team() {
               text="Marie De Gracia Coquerel"
               label="Research Associate"
             />
+          </ul>
+
+          <ul className="cards__items">
             <TeamItem
               src="images/team_headshots/Nate_Eck.webp"
               alt="Nathaniel Eck"
               text="Nathaniel Eck"
               label="Data Scientist 1"
             />
-          </ul>
-          <ul className="cards__items">
             <TeamItem
               src="images/team_headshots/Jake_Stanton.webp"
               alt="Jaccob Stanton"
@@ -50,6 +51,8 @@ function Team() {
               text="Monica Alsup"
               label="Administrative Assistant"
             />
+          </ul>
+          <ul className="cards__items">
             <TeamItem
               src="images/team_headshots/Boubacar_Gano.webp"
               alt="Boubacar Gano"
@@ -62,14 +65,15 @@ function Team() {
               text="Nurzaman Ahmed"
               label="Engineering Research Scientist"
             />
-          </ul>
-          <ul className="cards__items">
             <TeamItem
               src="images/team_headshots/Daniele_Azzaro.webp"
               alt="Daniele Azzaro"
               text="Daniele Azzaro"
               label="Research Associate"
             />
+          </ul>
+
+          <ul className="cards__items">
             <TeamItem
               src="images/team_headshots/Audrey_Oldani.webp"
               alt="Audrey Oldani"
@@ -91,12 +95,6 @@ function Team() {
           </ul>
           <ul className="cards__items">
             <TeamItem
-              src="images/team_headshots/Samantha_Aarons.webp"
-              alt="Samantha Aarons"
-              text="Samantha Aarons"
-              label="Laboratory Technician"
-            />
-            <TeamItem
               src="images/team_headshots/Neil_Docherty.webp"
               alt="Neil Docherty"
               text="Neil Docherty"
@@ -109,10 +107,30 @@ function Team() {
               label="Laboratory Technician"
             />
             <TeamItem
-              src="images/team_headshots/Danforth_Logo.webp"
+              src="images/team_headshots/Lee_Dobson.webp"
               alt="Lee Dobson"
               text="Lee Dobson"
               label="Laboratory Technician"
+            />
+          </ul>
+          <ul className="cards__items">
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="Paige Michalik"
+              text="Paige Michalik"
+              label="Laboratory Technician"
+            />
+            <TeamItem
+              src="images/team_headshots/Danforth_Logo.webp"
+              alt="Keiko Farah"
+              text="Keiko Farah"
+              label="Laboratory Technician"
+            />
+            <TeamItem
+              src="images/team_headshots/Alice_Kujur.webp"
+              alt="Alice Kujur"
+              text="Alice Kujur"
+              label="Research Scientist"
             />
           </ul>
         </div>

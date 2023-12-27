@@ -99,6 +99,12 @@ h1 {
   font-size: 18px;
   line-height: 24px;
 }
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+}
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
