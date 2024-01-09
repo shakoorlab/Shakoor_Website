@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import CardItem from "./CardItem";
 import Pagination from "@mui/material/Pagination";
 import "./Cards.css";
 
 function Cards() {
   const [currentPage, setCurrentPage] = useState(1);
+  const h1Ref = useRef(null);
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);
-    window.scrollTo(0, 0);
+    if (h1Ref.current) {
+      h1Ref.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
   return (
-    <div className="cards">
+    <div ref={h1Ref} className="cards">
       <h1>In the News</h1>
       <div className="cards__wrapper">
         {currentPage === 1 && (
