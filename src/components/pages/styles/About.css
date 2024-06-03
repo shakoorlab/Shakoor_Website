@@ -1,0 +1,138 @@
+.full-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.full-screen-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.top-gradient-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 20%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.white-top-gradient-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.5vw;
+  margin: 0;
+  color: black;
+  /* font-weight: bold; */
+  margin-top: 4rem;
+}
+
+.subtitle {
+  font-size: 1vw;
+  color: black;
+  max-width: 630px; /* Set the maximum width */
+  margin: 10px auto 0; /* Center the subtitle horizontally */
+}
+
+.white-text .title,
+.white-text .subtitle {
+  color: #fff;
+}
+
+.increased-subtitle-margin .title {
+  margin-top: 35px; /* Increase this value as needed */
+}
+
+@media (min-width: 1700px) {
+  .title,
+  .subtitle {
+    max-width: 800px;
+  }
+}
+@media (max-width: 1600px) {
+  .title {
+    font-size: 2.3rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem; /* Adjust font size for medium screens */
+  }
+  .subtitle {
+    font-size: 0.9rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; /* Adjust font size for medium screens */
+  }
+  .subtitle {
+    font-size: 0.9rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 4.5rem; /* Adjust font size for medium screens */
+  }
+  .subtitle {
+    font-size: 1.4rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 360px) {
+  .title {
+    font-size: 4.5rem; /* Adjust font size for medium screens */
+  }
+  .subtitle {
+    font-size: 1.4rem; /* Adjust font size for medium screens */
+  }
+}

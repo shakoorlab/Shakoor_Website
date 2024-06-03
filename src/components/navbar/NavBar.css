@@ -1,0 +1,27 @@
+/* ---------navbar------------ */
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar-toggler-icon {
+  color: black !important;
+}
+
+.navbar-container {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none; /* Prevent interactions when hidden */
+}
+
+.navbar-container.fade-in {
+  opacity: 1;
+  pointer-events: auto; /* Allow interactions when visible */
+}
+
+.navbar-container.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Prevent interactions when hidden */
+}
