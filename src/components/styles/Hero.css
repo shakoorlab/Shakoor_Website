@@ -1,22 +1,22 @@
 .hero-container {
-    display: grid;
-    grid-template-rows: 1fr auto; /* 1 fraction for the top section, auto for the button section */
-    width: 100%;
-    height: 100vh;
-
-  }
-  /* splitting content and preview into 2 parts */
+  display: grid;
+  grid-template-rows: 1fr auto; /* 1 fraction for the top section, auto for the button section */
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden; /* Hide horizontal scroll */
+}
+/* splitting content and preview into 2 parts */
 .top-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    width: 100%;
-  }
-   
-.slide, .preview-section {
-    width: 100%;
-    height: 100%;
-  }
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.slide,
+.preview-section {
+  width: 100%;
+  height: 100%;
+}
 
 .slide .item {
   width: 100%;
@@ -48,13 +48,14 @@
 .content .name {
     font-size: 5.5rem;
     animation: fadeInUp 0.5s ease-in-out;
-  }
+    white-space: nowrap; /* Prevent text from wrapping */
+}
 .content .des {
-    font-size: 1.8rem;
-    margin-top: -20px;
-    width: 80%;
-    animation: fadeInUp 1s ease-in-out 0.3s;
-  }
+  font-size: 1.8rem;
+  margin-top: -20px;
+  width: 80%;
+  animation: fadeInUp 1s ease-in-out 0.3s;
+}
 
 /* buttons controlling slides */
 .slide-button {
@@ -81,54 +82,50 @@
 }
 
 .preview-section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    margin-top: 20px;
-    width: 100%;
-    height: 100%; /* Ensure the container has a defined height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 20px;
+  width: 100%;
+  height: 100%; /* Ensure the container has a defined height */
 }
 
-  
 .preview {
-    width: 7%; /* Width of the preview images */
-    height: 7%; /* Height of the preview images, adjust if needed */
-    object-fit: cover;
-    margin-left: 40px; /* Space between images, adjust or remove if needed */
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border-radius: 20px;
-    box-shadow: 0 30px 50px #080707;
-  }
-  
+  width: 7%; /* Width of the preview images */
+  height: 7%; /* Height of the preview images, adjust if needed */
+  object-fit: cover;
+  margin-left: 40px; /* Space between images, adjust or remove if needed */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #080707;
+}
 
 .preview:hover,
 .preview.selected {
   transform: scale(1.3);
   border-radius: 20px;
-  
 }
 @keyframes fadeOut {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+  from {
+    opacity: 1;
   }
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }  
-.preview.selected{
-    animation: fadeOut 1s ease 1.5s forwards;
-
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.preview.selected {
+  animation: fadeOut 1s ease 1.5s forwards;
 }
 
 .slide .item {
@@ -148,17 +145,13 @@
 .slide .item.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); 
-
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* Responsive adjustments for screens smaller than a laptop */
 @media (max-width: 1024px) {
   .content .name {
     font-size: 4.5rem; /* Adjust font size for medium screens */
-    
   }
   .content .des {
     font-size: 1.4rem; /* Adjust font size for medium screens */
@@ -176,7 +169,6 @@
     width: 100%;
   }
 }
-
 
 @media (max-width: 480px) {
   .content .name {

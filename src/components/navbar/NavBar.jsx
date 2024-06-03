@@ -77,7 +77,7 @@ function NavBar() {
                 src={logoSrc}
                 width="50"
                 height="50"
-                className="d-inline-block align-center pb-1"
+                className="d-inline-block align-center pb-2"
               />
               <span className="d-inline-block align-center pt-1">
                 Shakoor Lab

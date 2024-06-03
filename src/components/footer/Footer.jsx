@@ -47,7 +47,7 @@ export default function Footer() {
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
-                <MDBIcon icon="gem" className="me-0" />
+                <MDBIcon className="me-0" />
                 Shakoor Lab
               </h6>
               <p>
@@ -126,15 +126,15 @@ export default function Footer() {
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon icon="home" className="me-0" />
+                <MDBIcon className="me-0" />
                 975 N Warson Rd, Olivette, MO 63132
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-0" />
+                <MDBIcon className="me-0" />
                 shakoorlab@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-0" /> (314) 587-1000
+                <MDBIcon className="me-0" /> (314) 587-1000
               </p>
             </MDBCol>
           </MDBRow>

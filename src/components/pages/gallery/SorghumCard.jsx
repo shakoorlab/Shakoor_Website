@@ -19,7 +19,7 @@ function SorghumCards() {
   //   }
   // };
   return (
-    <div ref={h1Ref} className="cards">
+    <div ref={h1Ref} className="gallery-cards">
       <h1>Sorghum</h1>
       <div className="cards__wrapper">
         {/* {currentPage === 1 && ( */}

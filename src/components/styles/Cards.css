@@ -1,9 +1,10 @@
-.cards,
-.gallery-cards {
+.cards {
   background: #fff;
   padding: 4rem;
 }
-
+.gallery-cards {
+  padding: 2rem;
+}
 h1 {
   text-align: center;
 }
@@ -152,5 +153,14 @@ h1 {
     flex: 0 1 auto; /* Allow the card to take its full height */
     width: 90%; /* Full width for each card */
     margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .gallery-cards {
+    padding: 0.5rem;
+  }
+
+  .cards {
+    padding: 2rem;
   }
 }

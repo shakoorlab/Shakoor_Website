@@ -19,7 +19,7 @@ function FieldDockCards() {
   //   }
   // };
   return (
-    <div ref={h1Ref} className="cards">
+    <div ref={h1Ref} className="gallery-cards">
       <h1>Gallery</h1>
       <div className="cards__wrapper">
         {/* {currentPage === 1 && ( */}

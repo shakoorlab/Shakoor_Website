@@ -3,10 +3,10 @@ import "../../styles/Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import img4 from "../../../assets/images/home/img4.webp";
-import img3 from "../../../assets/images/home/3.png";
+import img3 from "../../../assets/images/home/3.webp";
 import bee from "../../../assets/images/home/bee.webp";
-import fd from "../../../assets/images/home/fd.png";
-import best from "../../../assets/images/home/best_sorghum.png";
+import fd from "../../../assets/images/home/fd.webp";
+import best from "../../../assets/images/home/best_sorghum.webp";
 import img6 from "../../../assets/images/home/img6.webp";
 
 function HomeHero() {
