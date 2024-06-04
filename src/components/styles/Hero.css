@@ -130,27 +130,27 @@
     width: 100%;
   }
 }
-@media (max-width: 500px) {
-  .content .des {
-    display: none;
-  }
-}
 
 @media (max-width: 480px) {
   .content .name {
     font-size: 2rem; /* Adjust font size for small mobile devices */
+    margin-bottom: 20px;
     width: 100%;
   }
   .content .des {
-    display: none; /* Adjust font size for small mobile devices */
+    font-size: 1rem; /* Adjust font size for small mobile devices */
+    width: 100%;
   }
 }
 
 @media (max-width: 360px) {
   .content .name {
-    font-size: 1rem; /* Adjust font size for very small mobile devices */
+    font-size: 1.5rem; /* Adjust font size for very small mobile devices */
+    margin-bottom: 20px;
+    width: 100%;
   }
   .content .des {
-    display: none; /* Adjust font size for very small mobile devices */
+    font-size: 0.8rem; /* Adjust font size for very small mobile devices */
+    width: 100%;
   }
 }

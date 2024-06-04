@@ -92,10 +92,14 @@ function HomeHero() {
         </div>
       </div>
       <div className="slide-button">
-        <button className="prev" onClick={prevSlide}>
+        <button
+          className="prev"
+          onClick={prevSlide}
+          aria-label="Previous Slide"
+        >
           <FontAwesomeIcon icon={faArrowLeft} />
         </button>
-        <button className="next" onClick={nextSlide}>
+        <button className="next" onClick={nextSlide} aria-label="Next Slide">
           <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>

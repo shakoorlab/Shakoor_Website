@@ -9,6 +9,7 @@ const EmailButton = () => {
 
   return (
     <button
+      aria-label="Click to contact"
       onClick={handleClick}
       style={{
         borderRadius: "10px",
