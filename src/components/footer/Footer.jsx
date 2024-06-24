@@ -131,7 +131,7 @@ export default function Footer() {
               </p>
               <p>
                 <MDBIcon className="me-0" />
-                shakoorlab@gmail.com
+                shakoorlab.danforth@gmail.com
               </p>
               <p>
                 <MDBIcon className="me-0" /> (314) 587-1000
