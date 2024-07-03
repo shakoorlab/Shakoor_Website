@@ -46,7 +46,7 @@ function TeamCards() {
             src={images.Marie}
             alt="Marie De Gracia Coquerel"
             text="Marie De Gracia Coquerel"
-            title="Research Associate"
+            title="Research Scientist"
           />
         </ul>
         <ul className="cards__items">
@@ -76,7 +76,7 @@ function TeamCards() {
             src={images.Jake}
             alt="Jaccob Stanton"
             text="Jaccob Stanton"
-            title="Data Science Associate"
+            title="Data Scientist 1"
           />
           <TeamItem
             src={images.Colton}
