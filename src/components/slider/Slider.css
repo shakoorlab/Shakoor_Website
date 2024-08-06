@@ -11,6 +11,7 @@
   flex-direction: column; /* Stack the sliders vertically */
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .slider {
