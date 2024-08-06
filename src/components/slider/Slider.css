@@ -6,12 +6,10 @@
     url("../../assets/images/gallery/greenhouse/gh3.webp");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Optional: Makes the background image stay in place while scrolling */
   display: flex;
   flex-direction: column; /* Stack the sliders vertically */
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Ensures the background covers the whole viewport height */
 }
 
 .slider {
