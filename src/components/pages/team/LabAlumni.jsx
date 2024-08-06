@@ -14,6 +14,7 @@ function LabAlumni() {
   return (
     <>
       <h1>Lab Alumni</h1>
+      <br></br>
       <div className="cards_wrapper">
         {currentPage === 1 && (
           <>
@@ -116,7 +117,7 @@ function LabAlumni() {
                 title="Laboratory Technician"
               />
               <TeamItem
-                src={images.NoPhoto}
+                src={images.Gabriel}
                 alt="Gabriel Bernstein"
                 text="Gabriel Bernstein"
                 title="High School Intern"

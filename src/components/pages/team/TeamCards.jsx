@@ -99,7 +99,7 @@ function TeamCards() {
             title="Laboratory Technician"
           />
           <TeamItem
-            src={images.NoPhoto}
+            src={images.Paige}
             alt="Paige Michalik"
             text="Paige Michalik"
             title="Laboratory Technician"

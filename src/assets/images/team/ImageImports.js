@@ -12,6 +12,7 @@ import Jake from "./team_headshots/Jake_Stanton.webp";
 import Colton from "./team_headshots/Colton_Burris.webp";
 import Lee from "./team_headshots/Lee_Dobson.webp";
 import Ella from "./team_headshots/Ella_Marks.webp";
+import Paige from "./team_headshots/Paige_Michalik.webp";
 
 //lab alumni
 import Neil from "./team_headshots/Neil_Docherty.webp";
@@ -22,6 +23,7 @@ import Amy from "./team_headshots/Amy_Pfeifer.webp";
 import Brendan from "./team_headshots/Brendan_Eddingfield.webp";
 import Aaron from "./team_headshots/Aaron_Fackler.webp";
 import Katherine from "./team_headshots/Katherine_Johnson.webp";
+import Gabriel from "./team_headshots/Gabriel_Bernstein.webp";
 
 //no photo
 import NoPhoto from "./team_headshots/Danforth_Logo.webp";
@@ -40,6 +42,7 @@ const images = {
   Colton,
   Lee,
   Ella,
+  Paige,
   Neil,
   Audrey,
   Zander,
@@ -48,6 +51,7 @@ const images = {
   Brendan,
   Aaron,
   Katherine,
+  Gabriel,
   NoPhoto,
 };
 
