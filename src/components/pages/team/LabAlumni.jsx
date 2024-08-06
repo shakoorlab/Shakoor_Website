@@ -5,7 +5,7 @@ import "../../styles/Cards.css";
 import images from "../../../assets/images/team/ImageImports";
 
 function LabAlumni() {
-  // const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
 
   // const handlePageChange = (event, value) => {
   //   setCurrentPage(value);
