@@ -13,7 +13,7 @@ function TeamCards() {
             src={images.Nadia}
             alt="Nadia Shakoor"
             text="Nadia Shakoor"
-            title="Principal Investigator"
+            title="Assistant Member and Principal Investigator"
           />
           <TeamItem
             src={images.Jocelyn}
@@ -85,19 +85,13 @@ function TeamCards() {
             title="Laboratory Technician"
           />
           <TeamItem
-            src={images.NoPhoto}
-            alt="Jacob Sterzik"
-            text="Jacob Sterzik"
-            title="Laboratory Technician"
+            src={images.Cicero}
+            alt="Cicero Menezes"
+            text="Cicero Menezes"
+            title="Visiting Scientist"
           />
         </ul>
         <ul className="cards__items">
-          <TeamItem
-            src={images.Lee}
-            alt="Lee Dobson"
-            text="Lee Dobson"
-            title="Laboratory Technician"
-          />
           <TeamItem
             src={images.Paige}
             alt="Paige Michalik"
@@ -110,8 +104,14 @@ function TeamCards() {
             text="Keiko Farah"
             title="Laboratory Technician"
           />
+          <TeamItem
+            src={images.Lee}
+            alt="Lee Dobson"
+            text="Lee Dobson"
+            title="Laboratory Technician"
+          />
         </ul>
-        <ul className="cards__items">
+        {/* <ul className="cards__items">
           <TeamItem
             src={images.Ella}
             alt="Ella Marks"
@@ -130,7 +130,7 @@ function TeamCards() {
             text="Jacob Morton"
             title="High School Intern"
           />
-        </ul>
+        </ul> */}
       </div>
     </>
   );

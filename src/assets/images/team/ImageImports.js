@@ -10,9 +10,9 @@ import Daniele from "./team_headshots/Daniele_Azzaro.webp";
 import Nate from "./team_headshots/Nate_Eck.webp";
 import Jake from "./team_headshots/Jake_Stanton.webp";
 import Colton from "./team_headshots/Colton_Burris.webp";
-import Lee from "./team_headshots/Lee_Dobson.webp";
-import Ella from "./team_headshots/Ella_Marks.webp";
 import Paige from "./team_headshots/Paige_Michalik.webp";
+import Cicero from "./team_headshots/Cicero_Menezes.webp";
+import Lee from "./team_headshots/Lee_Dobson.webp";
 
 //lab alumni
 import Neil from "./team_headshots/Neil_Docherty.webp";
@@ -22,8 +22,17 @@ import Rachel from "./team_headshots/Rachel_Lange.webp";
 import Amy from "./team_headshots/Amy_Pfeifer.webp";
 import Brendan from "./team_headshots/Brendan_Eddingfield.webp";
 import Aaron from "./team_headshots/Aaron_Fackler.webp";
-import Katherine from "./team_headshots/Katherine_Johnson.webp";
 import Gabriel from "./team_headshots/Gabriel_Bernstein.webp";
+import Ella from "./team_headshots/Ella_Marks.webp";
+
+//reu_interns
+import Katherine from "./team_headshots/Katherine_Johnson.webp";
+
+//interns
+import Katherine_N from "./team_headshots/Katherine_Nguyen.webp";
+import Gabrielle from "./team_headshots/Gabrielle_Moore.webp";
+import Madison from "./team_headshots/Madison_Moore.webp";
+import Navin from "./team_headshots/Navin_Narayanan.webp";
 
 //no photo
 import NoPhoto from "./team_headshots/Danforth_Logo.webp";
@@ -43,6 +52,7 @@ const images = {
   Lee,
   Ella,
   Paige,
+  Cicero,
   Neil,
   Audrey,
   Zander,
@@ -52,6 +62,10 @@ const images = {
   Aaron,
   Katherine,
   Gabriel,
+  Katherine_N,
+  Gabrielle,
+  Madison,
+  Navin,
   NoPhoto,
 };
 

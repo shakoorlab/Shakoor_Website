@@ -3,6 +3,8 @@ import "../styles/Tabs.css";
 import TeamHero from "../../hero/team/TeamHero";
 import LabAlumni from "./LabAlumni";
 import TeamCards from "./TeamCards";
+import ReuProgram from "./REU";
+import Internships from "./Internships";
 
 const ResearchTabs = ({ activeTab, setActiveTab }) => {
   return (
@@ -19,6 +21,19 @@ const ResearchTabs = ({ activeTab, setActiveTab }) => {
           onClick={() => setActiveTab("alumni")}
         >
           Lab Alumni
+        </h1>
+
+        <h1
+          className={`tab ${activeTab === "reu" ? "active" : ""}`}
+          onClick={() => setActiveTab("reu")}
+        >
+          REU Program
+        </h1>
+        <h1
+          className={`tab ${activeTab === "internships" ? "active" : ""}`}
+          onClick={() => setActiveTab("internships")}
+        >
+          Internships
         </h1>
         <h1
           className={`tab ${activeTab === "summary" ? "active" : ""}`}
@@ -103,6 +118,35 @@ function Team() {
               Lab.
             </div>
             <LabAlumni />
+          </>
+        )}
+        {activeTab === "reu" && (
+          <>
+            <div className="content">
+              Fostering the next generation of plant scientists is critical to
+              solving some of our planet’s biggest challenges. For ten weeks
+              each summer, students in our Research Experience for Undergraduate
+              (REU) summer internship program are immersed in a rich research
+              environment that lays the foundation for a career in plant
+              science. The program is made possible through generous support
+              from the National Science Foundation (NSF).
+            </div>
+            <ReuProgram />
+          </>
+        )}
+        {activeTab === "internships" && (
+          <>
+            <div className="content">
+              Interns who have passed through our lab have played a crucial role
+              in driving forward our research, bringing fresh perspectives and
+              enthusiasm to our projects. The hands-on experience and mentorship
+              they receive here equip them with the tools to excel in their
+              future academic and professional careers. Many have gone on to
+              make significant contributions in their fields, maintaining strong
+              ties with our lab that reflect the enduring influence of their
+              time spent here.
+            </div>
+            <Internships />
           </>
         )}
       </div>

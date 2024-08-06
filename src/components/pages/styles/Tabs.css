@@ -110,6 +110,7 @@
   .summary-content {
     font-size: 0.8rem;
   }
+  .tabs,
   .gallery-tabs {
     width: 100%;
     overflow-x: auto; /* Allow horizontal scrolling */

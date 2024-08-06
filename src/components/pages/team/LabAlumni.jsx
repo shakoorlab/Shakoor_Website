@@ -67,16 +67,16 @@ function LabAlumni() {
                 title="Laboratory Technician"
               />
               <TeamItem
-                src={images.Katherine}
-                alt="Katherine Johnson"
-                text="Katherine Johnson"
-                title="REU Intern/Laboratory Technician"
+                src={images.Ella}
+                alt="Ella Marks"
+                text="Ella Marks"
+                title="Laboratory Assistant"
               />
               <TeamItem
-                src={images.NoPhoto}
-                alt="Madison Payne"
-                text="Madison Payne"
-                title="REU Intern"
+                src={images.Gabriel}
+                alt="Gabriel Bernstein"
+                text="Gabriel Bernstein"
+                title="Laboratory Assistant"
               />
             </ul>
             <ul className="cards__items">
@@ -86,24 +86,6 @@ function LabAlumni() {
                 text="Jay Carter"
                 title="Senior Lab Technician"
               />
-              <TeamItem
-                src={images.NoPhoto}
-                alt="Devin Scharer"
-                text="Devin Scharer"
-                title="High School Intern"
-              />
-              <TeamItem
-                src={images.NoPhoto}
-                alt="Victoria Frerichs"
-                text="Victoria Frerichs"
-                title="High School Intern"
-              />
-            </ul>
-          </>
-        )}
-        {currentPage === 2 && (
-          <>
-            <ul className="cards__items">
               <TeamItem
                 src={images.NoPhoto}
                 alt="Emma Gandolfo"
@@ -116,11 +98,35 @@ function LabAlumni() {
                 text="John Bao"
                 title="Laboratory Technician"
               />
+            </ul>
+          </>
+        )}
+        {currentPage === 2 && (
+          <>
+            <ul className="cards__items">
               <TeamItem
-                src={images.Gabriel}
-                alt="Gabriel Bernstein"
-                text="Gabriel Bernstein"
+                src={images.NoPhoto}
+                alt="Devin Scharer"
+                text="Devin Scharer"
                 title="High School Intern"
+              />
+              <TeamItem
+                src={images.NoPhoto}
+                alt="Victoria Frerichs"
+                text="Victoria Frerichs"
+                title="High School Intern"
+              />
+              <TeamItem
+                src={images.Katherine}
+                alt="Katherine Johnson"
+                text="Katherine Johnson"
+                title="REU Intern/Laboratory Technician"
+              />
+              <TeamItem
+                src={images.NoPhoto}
+                alt="Madison Payne"
+                text="Madison Payne"
+                title="REU Intern"
               />
             </ul>
             <ul className="cards__items">

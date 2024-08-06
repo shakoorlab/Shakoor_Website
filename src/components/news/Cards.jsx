@@ -23,12 +23,28 @@ function Cards() {
           <>
             <ul className="cards__items">
               <CardItem
+                src={images.article_15}
+                alt="Danforth&#39;s New Assistant Member"
+                text="Danforth Center Announces New Assistant Member"
+                label="August 6, 2024"
+                path="https://www.danforthcenter.org/news/danforth-center-announces-new-assistant-member/"
+              />
+              <CardItem
+                src={images.article_16}
+                alt="Meet the FieldDock"
+                text="Meet the FieldDock: A Smart-Farm System for Sustainable Agriculture"
+                label="June 25, 2024"
+                path="https://www.danforthcenter.org/news/meet-the-fielddock-a-smart-farm-system-for-sustainable-agriculture/"
+              />
+              <CardItem
                 src={images.article_14}
-                alt="PheNode"
+                alt="Meet the founder"
                 text="Meet the founder: Agrela&#39;s Nadia Shakoor"
                 label="December 11, 2023"
                 path="https://agfundernews.com/agrelas-nadia-shakoor-on-how-to-restore-biodiversity-to-us-highways"
               />
+            </ul>
+            <ul className="cards__items">
               <CardItem
                 src={images.article_13}
                 alt="PheNode in Field"
@@ -43,8 +59,6 @@ function Cards() {
                 label="September 20, 2023"
                 path="https://www.bizjournals.com/stlouis/inno/stories/news/2023/09/20/agrela-ecosystems-data-phenode-danforth-center.html"
               />
-            </ul>
-            <ul className="cards__items">
               <CardItem
                 src={images.article_11}
                 alt="Sorghum field"
@@ -52,6 +66,8 @@ function Cards() {
                 label="January 1, 2023"
                 path="https://www.bizjournals.com/stlouis/news/2023/01/01/sorghum-harnessing-the-power-of-climate-smart-crop.html"
               />
+            </ul>
+            <ul className="cards__items">
               <CardItem
                 src={images.article_10}
                 alt="Farmer in field"
@@ -66,8 +82,6 @@ function Cards() {
                 label="September 28, 2022"
                 path="https://www.eurekalert.org/news-releases/966324"
               />
-            </ul>
-            <ul className="cards__items">
               <CardItem
                 src={images.article_7}
                 alt="Photo at the NSF"
@@ -75,6 +89,12 @@ function Cards() {
                 label="September 15, 2022"
                 path="https://www.slu.edu/news/2022/september/nsf-grant-edge-computing.php"
               />
+            </ul>
+          </>
+        )}
+        {currentPage === 2 && (
+          <>
+            <ul className="cards__items">
               <CardItem
                 src={images.article_1}
                 alt="Image of PheNode in field"
@@ -89,12 +109,6 @@ function Cards() {
                 label="August 5, 2021"
                 path="https://www.bizjournals.com/stlouis/inno/stories/profiles/2021/08/05/st-louis-character-2021-nadia-shakoor.html"
               />
-            </ul>
-          </>
-        )}
-        {currentPage === 2 && (
-          <>
-            <ul className="cards__items">
               <CardItem
                 src={images.article_5}
                 alt="Image of phenotyper"
@@ -102,7 +116,7 @@ function Cards() {
                 label=" February 10, 2021"
                 path="https://entrepreneuriallythinking.libsyn.com/ethinkstl-ep213-season16-ep10-nadia-shakoor"
               />
-              <CardItem
+              {/* <CardItem
                 src={images.article_2}
                 alt="Image of TerraReff project"
                 text="Farming and Drones? How do they work together?"
@@ -115,7 +129,7 @@ function Cards() {
                 text="Phenotyping Station Ready for Field Testing"
                 label="November 4, 2016"
                 path="https://www.agupdate.com/crops/phenotyping-station-ready-for-field-testing/article_dd916df4-5ed8-5da9-a8cb-0b6696e4d9e1.html"
-              />
+              /> */}
             </ul>
           </>
         )}

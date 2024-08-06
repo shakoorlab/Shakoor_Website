@@ -11,6 +11,8 @@ import article_11 from "./article_11.webp";
 import article_12 from "./article_12.webp";
 import article_13 from "./article_13.webp";
 import article_14 from "./article_14.webp";
+import article_15 from "./article_15.webp";
+import article_16 from "./article_16.webp";
 
 const images = {
   article_1,
@@ -25,6 +27,8 @@ const images = {
   article_12,
   article_13,
   article_14,
+  article_15,
+  article_16,
 };
 
 export default images;
