@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../../assets/images/logo/logo5.png";
+import logo from "../../assets/images/logo/logo.webp";
 
 function NavBar() {
   const [logoSrc, setLogoSrc] = useState(logo); //used for template image
