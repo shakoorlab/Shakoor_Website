@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import TeamItem from "./TeamItem";
-import Pagination from "@mui/material/Pagination";
+// import Pagination from "@mui/material/Pagination";
 import "../../styles/Cards.css";
 import images from "../../../assets/images/team/ImageImports";
 
 function LabAlumni() {
-  const [currentPage, setCurrentPage] = useState(1);
+  // const [currentPage, setCurrentPage] = useState(1);
 
-  const handlePageChange = (event, value) => {
-    setCurrentPage(value);
-  };
+  // const handlePageChange = (event, value) => {
+  //   setCurrentPage(value);
+  // };
 
   return (
     <>
@@ -101,7 +101,7 @@ function LabAlumni() {
             </ul>
           </>
         )}
-        {currentPage === 2 && (
+        {/* {currentPage === 2 && (
           <>
             <ul className="cards__items">
               <TeamItem
@@ -150,15 +150,15 @@ function LabAlumni() {
               />
             </ul>
           </>
-        )}
-        <div className="pagination-container">
+        )} */}
+        {/* <div className="pagination-container">
           <Pagination
             count={2}
             page={currentPage}
             onChange={handlePageChange}
             color="primary"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
