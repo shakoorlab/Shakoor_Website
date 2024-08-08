@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TeamItem from "./TeamItem";
-import Pagination from "@mui/material/Pagination";
+// import Pagination from "@mui/material/Pagination";
 import "../../styles/Cards.css";
 import images from "../../../assets/images/team/ImageImports";
 
@@ -32,7 +32,7 @@ function ReuProgram() {
                 title="NSF-REU Intern"
               />
               <TeamItem
-                src={images.NoPhoto}
+                src={images.Tate}
                 alt="Tate Severs"
                 text="Tate Severs"
                 title="NSF-REU Intern"
