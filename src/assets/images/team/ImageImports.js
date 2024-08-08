@@ -27,6 +27,7 @@ import Ella from "./team_headshots/Ella_Marks.webp";
 
 //reu_interns
 import Katherine from "./team_headshots/Katherine_Johnson.webp";
+import Tate from "./reu/Tate_Severs.webp";
 
 //interns
 import Katherine_N from "./team_headshots/Katherine_Nguyen.webp";
@@ -66,6 +67,7 @@ const images = {
   Gabrielle,
   Madison,
   Navin,
+  Tate,
   NoPhoto,
 };
 
