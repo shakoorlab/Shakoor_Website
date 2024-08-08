@@ -3,7 +3,7 @@ import React from "react";
 import AboutHero from "../../hero/about/AboutHero";
 import "../styles/About.css";
 import About1 from "../../../assets/images/about/About34.webp";
-import About2 from "../../../assets/images/gallery/field/field1.webp";
+import About2 from "../../../assets/images/about/about_2.webp";
 import About3 from "../../../assets/images/about/about_3.webp";
 import SorghumAbout from "./SorghumAbout";
 
