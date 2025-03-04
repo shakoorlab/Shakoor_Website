@@ -111,26 +111,26 @@ function TeamCards() {
             title="Laboratory Technician"
           />
         </ul>
-        {/* <ul className="cards__items">
+        <ul className="cards__items">
           <TeamItem
-            src={images.Ella}
-            alt="Ella Marks"
-            text="Ella Marks"
-            title="Laboratory Assistant"
-          />
-          <TeamItem
-            src={images.NoPhoto}
-            alt="Cefarino Patino"
-            text="Cefarino Patino"
+            src={images.Grace}
+            alt="Grace Chambers"
+            text="Grace Chambers"
             title="High School Intern"
           />
           <TeamItem
             src={images.NoPhoto}
-            alt="Jacob Morton"
-            text="Jacob Morton"
-            title="High School Intern"
+            alt="Lacey Drew"
+            text="Lacey Drew"
+            title="Laboratory Technician"
           />
-        </ul> */}
+          <TeamItem
+            src={images.NoPhoto}
+            alt="Julia Talbert"
+            text="Julia Talbert"
+            title="Laboratory Technician"
+          />
+        </ul>
       </div>
     </>
   );

@@ -19,7 +19,7 @@ const Slider = ({
     if (!flipped) {
       return (
         <>
-          <img src={imageSrc} alt="Travel" className="slider__image" />
+          <img src={imageSrc} alt="Photo from Lab" className="slider__image" />
           <div className="slider__content">
             <h1 className="slider__title">{title}</h1>
             <p>{subtitle}</p>
@@ -38,7 +38,7 @@ const Slider = ({
             <br />
             <p>{questionThree}</p>
           </div>
-          <img src={imageSrc} alt="Travel" className="slider__image" />
+          <img src={imageSrc} alt="Photo from lab" className="slider__image" />
         </>
       );
     }
