@@ -68,13 +68,13 @@ function Cards() {
               />
             </ul>
             <ul className="cards__items">
-              <CardItem
+              {/* <CardItem
                 src={images.article_10}
                 alt="Farmer in field"
                 text="Sorghum's Revival Goes Against the Grain"
                 label="September 30, 2022"
                 path="https://www.forbes.com/sites/daphneewingchow/2022/09/30/sorghums-revival-goes-against-the-grain/?sh=1fede1d66f1c"
-              />
+              /> */}
               <CardItem
                 src={images.article_8}
                 alt="Photo of Sorghum"
@@ -89,12 +89,6 @@ function Cards() {
                 label="September 15, 2022"
                 path="https://www.slu.edu/news/2022/september/nsf-grant-edge-computing.php"
               />
-            </ul>
-          </>
-        )}
-        {currentPage === 2 && (
-          <>
-            <ul className="cards__items">
               <CardItem
                 src={images.article_1}
                 alt="Image of PheNode in field"
@@ -102,6 +96,19 @@ function Cards() {
                 label="September 14, 2021"
                 path="https://www.salk.edu/news-release/salk-plant-researchers-launch-collaboration-to-breed-carbon-capturing-sorghum/"
               />
+            </ul>
+          </>
+        )}
+        {currentPage === 2 && (
+          <>
+            <ul className="cards__items">
+              {/* <CardItem
+                src={images.article_1}
+                alt="Image of PheNode in field"
+                text="Salk Researchers Launch Collaboration"
+                label="September 14, 2021"
+                path="https://www.salk.edu/news-release/salk-plant-researchers-launch-collaboration-to-breed-carbon-capturing-sorghum/"
+              /> */}
               <CardItem
                 src={images.article_6}
                 alt="Image of Dr. Shakoor working with PheNode"
