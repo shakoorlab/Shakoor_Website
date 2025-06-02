@@ -23,7 +23,7 @@ function ReuProgram() {
                 src={images.Makayla}
                 alt="Makayla Stewart"
                 text="Makayla Stewart"
-                title="NSF-REU Intern"
+                title="REU Intern"
               />
               <TeamItem
                 src={images.Tate}
