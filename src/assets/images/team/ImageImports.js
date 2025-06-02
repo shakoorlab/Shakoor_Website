@@ -29,6 +29,7 @@ import Ella from "./team_headshots/Alumni/Ella_Marks.webp";
 //reu_interns
 import Katherine from "./reu/Katherine_Johnson.webp";
 import Tate from "./reu/Tate_Severs.webp";
+import Makayla from "./reu/Makayla_Stewart.webp";
 
 //interns
 import Katherine_N from "./team_headshots/Interns/Katherine_Nguyen.webp";
@@ -62,13 +63,16 @@ const images = {
   Amy,
   Brendan,
   Aaron,
-  Katherine,
   Gabriel,
   Katherine_N,
   Gabrielle,
   Madison,
   Navin,
+
+  //reu
+  Katherine,
   Tate,
+  Makayla,
 
   Grace,
 

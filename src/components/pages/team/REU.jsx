@@ -20,10 +20,16 @@ function ReuProgram() {
           <>
             <ul className="cards__items">
               <TeamItem
-                src={images.Katherine}
-                alt="Katherine Johnson"
-                text="Katherine Johnson"
-                title="NSF-REU Intern/Laboratory Technician"
+                src={images.Makayla}
+                alt="Makayla Stewart"
+                text="Makayla Stewart"
+                title="NSF-REU Intern"
+              />
+              <TeamItem
+                src={images.Tate}
+                alt="Tate Severs"
+                text="Tate Severs"
+                title="NSF-REU Intern"
               />
               <TeamItem
                 src={images.NoPhoto}
@@ -32,10 +38,10 @@ function ReuProgram() {
                 title="NSF-REU Intern"
               />
               <TeamItem
-                src={images.Tate}
-                alt="Tate Severs"
-                text="Tate Severs"
-                title="NSF-REU Intern"
+                src={images.Katherine}
+                alt="Katherine Johnson"
+                text="Katherine Johnson"
+                title="NSF-REU Intern/Laboratory Technician"
               />
             </ul>
           </>
