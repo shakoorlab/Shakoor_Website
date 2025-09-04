@@ -4,7 +4,7 @@ import about from "../../../assets/images/about/about_hero.webp";
 
 const EmailButton = () => {
   const handleClick = () => {
-    window.location.href = "mailto:shakoorlab@gmail.com";
+    window.location.href = "mailto:shakoorlab.danforth@gmail.com";
   };
 
   return (
