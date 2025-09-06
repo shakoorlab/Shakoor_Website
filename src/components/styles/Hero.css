@@ -1,9 +1,14 @@
 .hero-container {
+  position: relative; /* also helps with absolute children */
   display: grid;
-  grid-template-rows: 1fr auto; /* 1 fraction for the top section, auto for the button section */
+  grid-template-rows: 1fr auto;
   width: 100%;
+  /* fallbacks, newest last */
   height: 100vh;
-  overflow-y: hidden; /* Hide horizontal scroll */
+  height: 100svh; /* small viewport height */
+  height: 100dvh; /* dynamic viewport height */
+  overflow-x: hidden; /* if you wanted to hide horizontal scroll */
+  overflow-y: visible;
 }
 /* splitting content and preview into 2 parts */
 .top-section {
