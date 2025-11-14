@@ -10,6 +10,13 @@
   color: black !important;
 }
 
+/* Make sure the logo always stays square and small */
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain; /* keeps it from stretching if anything weird happens */
+}
+
 .navbar-container {
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
