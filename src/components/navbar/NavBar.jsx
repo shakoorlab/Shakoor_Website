@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavBar.css";
 import "../../App.css";
 import Container from "react-bootstrap/Container";
@@ -7,7 +8,6 @@ import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../assets/images/logo/logo.webp";
 
 function NavBar() {
