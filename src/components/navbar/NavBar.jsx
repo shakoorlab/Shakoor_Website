@@ -77,7 +77,7 @@ function NavBar() {
                 src={logoSrc}
                 width="50"
                 height="50"
-                className="d-inline-block align-center pb-2"
+                className="navbar-logo d-inline-block align-center pb-2"
               />
               <span className="d-inline-block align-center">Shakoor Lab</span>
             </Navbar.Brand>
