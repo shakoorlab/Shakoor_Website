@@ -25,14 +25,14 @@ function FieldCards() {
         {/* {currentPage === 1 && ( */}
         {/* <> */}
         <ul className="cards__items">
-          <GalleryCardItem src={Field1} alt="Field" />
-          <GalleryCardItem src={Field2} alt="Field" />
-          <GalleryCardItem src={Field3} alt="Field" />
+          <GalleryCardItem src={Field1} alt="Field" loading="lazy" />
+          <GalleryCardItem src={Field2} alt="Field" loading="lazy" />
+          <GalleryCardItem src={Field3} alt="Field" loading="lazy" />
         </ul>
         <ul className="cards__items">
-          <GalleryCardItem src={Field4} alt="Field" />
-          <GalleryCardItem src={Field5} alt="Field" />
-          <GalleryCardItem src={Field6} alt="Field" />
+          <GalleryCardItem src={Field4} alt="Field" loading="lazy" />
+          <GalleryCardItem src={Field5} alt="Field" loading="lazy" />
+          <GalleryCardItem src={Field6} alt="Field" loading="lazy" />
         </ul>
         {/* <ul className="cards__items">
             <GalleryCardItem

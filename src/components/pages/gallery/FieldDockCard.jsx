@@ -25,14 +25,38 @@ function FieldDockCards() {
         {/* {currentPage === 1 && ( */}
         {/* <> */}
         <ul className="cards__items">
-          <GalleryCardItem src={FieldDock1} alt="Fielddock photo" />
-          <GalleryCardItem src={FieldDock2} alt="Fielddock photo" />
-          <GalleryCardItem src={FieldDock3} alt="Fielddock photo" />
+          <GalleryCardItem
+            src={FieldDock1}
+            alt="Fielddock photo"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={FieldDock2}
+            alt="Fielddock photo"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={FieldDock3}
+            alt="Fielddock photo"
+            loading="lazy"
+          />
         </ul>
         <ul className="cards__items">
-          <GalleryCardItem src={FieldDock4} alt="Fielddock photo" />
-          <GalleryCardItem src={FieldDock5} alt="Fielddock photo" />
-          <GalleryCardItem src={FieldDock6} alt="Fielddock photo" />
+          <GalleryCardItem
+            src={FieldDock4}
+            alt="Fielddock photo"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={FieldDock5}
+            alt="Fielddock photo"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={FieldDock6}
+            alt="Fielddock photo"
+            loading="lazy"
+          />
         </ul>
         {/* <ul className="cards__items">
             <GalleryCardItem

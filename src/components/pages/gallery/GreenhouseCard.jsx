@@ -25,14 +25,38 @@ function GreenhouseCards() {
         {/* {currentPage === 1 && ( */}
         {/* <> */}
         <ul className="cards__items">
-          <GalleryCardItem src={Greenhouse1} alt="Greenhouse Activities" />
-          <GalleryCardItem src={Greenhouse2} alt="Greenhouse Activities" />
-          <GalleryCardItem src={Greenhouse3} alt="Greenhouse Activities" />
+          <GalleryCardItem
+            src={Greenhouse1}
+            alt="Greenhouse Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Greenhouse2}
+            alt="Greenhouse Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Greenhouse3}
+            alt="Greenhouse Activities"
+            loading="lazy"
+          />
         </ul>
         <ul className="cards__items">
-          <GalleryCardItem src={Greenhouse4} alt="Greenhouse Activities" />
-          <GalleryCardItem src={Greenhouse5} alt="Greenhouse Activities" />
-          <GalleryCardItem src={Greenhouse6} alt="Greenhouse Activities" />
+          <GalleryCardItem
+            src={Greenhouse4}
+            alt="Greenhouse Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Greenhouse5}
+            alt="Greenhouse Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Greenhouse6}
+            alt="Greenhouse Activities"
+            loading="lazy"
+          />
         </ul>
         {/* <ul className="cards__items">
             <GalleryCardItem

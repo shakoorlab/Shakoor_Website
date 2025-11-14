@@ -25,14 +25,14 @@ function PhenoCards() {
         {/* {currentPage === 1 && ( */}
         {/* <> */}
         <ul className="cards__items">
-          <GalleryCardItem src={Pheno1} alt="Phenotyping" />
-          <GalleryCardItem src={Pheno2} alt="Phenotyping" />
-          <GalleryCardItem src={Pheno3} alt="Phenotyping" />
+          <GalleryCardItem src={Pheno1} alt="Phenotyping" loading="lazy" />
+          <GalleryCardItem src={Pheno2} alt="Phenotyping" loading="lazy" />
+          <GalleryCardItem src={Pheno3} alt="Phenotyping" loading="lazy" />
         </ul>
         <ul className="cards__items">
-          <GalleryCardItem src={Pheno4} alt="Phenotyping" />
-          <GalleryCardItem src={Pheno5} alt="Phenotyping" />
-          <GalleryCardItem src={Pheno6} alt="Phenotyping" />
+          <GalleryCardItem src={Pheno4} alt="Phenotyping" loading="lazy" />
+          <GalleryCardItem src={Pheno5} alt="Phenotyping" loading="lazy" />
+          <GalleryCardItem src={Pheno6} alt="Phenotyping" loading="lazy" />
         </ul>
         {/* <ul className="cards__items">
             <GalleryCardItem

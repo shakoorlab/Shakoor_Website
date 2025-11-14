@@ -25,14 +25,38 @@ function OutreachCards() {
         {/* {currentPage === 1 && ( */}
         {/* <> */}
         <ul className="cards__items">
-          <GalleryCardItem src={Outreach1} alt="Outreach Activities" />
-          <GalleryCardItem src={Outreach2} alt="Outreach Activities" />
-          <GalleryCardItem src={Outreach3} alt="Outreach Activities" />
+          <GalleryCardItem
+            src={Outreach1}
+            alt="Outreach Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Outreach2}
+            alt="Outreach Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Outreach3}
+            alt="Outreach Activities"
+            loading="lazy"
+          />
         </ul>
         <ul className="cards__items">
-          <GalleryCardItem src={Outreach4} alt="Outreach Activities" />
-          <GalleryCardItem src={Outreach5} alt="Outreach Activities" />
-          <GalleryCardItem src={Outreach6} alt="Outreach Activities" />
+          <GalleryCardItem
+            src={Outreach4}
+            alt="Outreach Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Outreach5}
+            alt="Outreach Activities"
+            loading="lazy"
+          />
+          <GalleryCardItem
+            src={Outreach6}
+            alt="Outreach Activities"
+            loading="lazy"
+          />
         </ul>
         {/* <ul className="cards__items">
             <GalleryCardItem
