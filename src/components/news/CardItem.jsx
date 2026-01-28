@@ -1,23 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 function CardItem(props) {
   return (
     <>
       <li className="cards__item" data-aos="fade-up">
-        <Link className="cards__item__link" to={props.path}>
-          <figure className="cards__item__pic-wrap" data-category={props.label}>
+        <a
+          className="cards__item__link news__item__link"
+          href={props.path}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <figure
+            className="cards__item__pic-wrap news__item__pic-wrap"
+            data-category={props.label}
+          >
             <img
               src={props.src}
               alt="article"
               loading="lazy"
-              className="cards__item__img"
+              decoding="async"
+              className="cards__item__img news__item__img"
             />
           </figure>
-          <div className="cards__item__info" data-aos="fade-up">
+          <div className="cards__item__info">
             <h5 className="cards__item__text">{props.text}</h5>
           </div>
-        </Link>
+        </a>
       </li>
     </>
   );
