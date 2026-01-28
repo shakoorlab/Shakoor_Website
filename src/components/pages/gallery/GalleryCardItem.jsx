@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../../styles/Cards.css";
 
-function GalleryCardItem({ src, alt }) {
+function GalleryCardItem({ src, alt, loading = "lazy" }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleImageClick = () => {
@@ -14,16 +14,28 @@ function GalleryCardItem({ src, alt }) {
 
   return (
     <>
-      <li className="cards__item" onClick={handleImageClick}>
+      <li className="cards__item gallery__item" onClick={handleImageClick}>
         <div className="cards__item__link">
           <div className="cards__item__pic-wrap">
-            <img src={src} alt={alt} className="cards__item__img" />
+            <img
+              src={src}
+              alt={alt}
+              loading={loading}
+              decoding="async"
+              fetchpriority="low"
+              className="cards__item__img gallery__item__img"
+            />
           </div>
         </div>
       </li>
       {isExpanded && (
         <div className="overlay" onClick={handleClose}>
-          <img src={src} alt={alt} className="expanded__img" />
+          <img
+            src={src}
+            alt={alt}
+            loading="eager"
+            className="expanded__img gallery__item__img"
+          />
         </div>
       )}
     </>

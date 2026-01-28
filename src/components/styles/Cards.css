@@ -58,6 +58,7 @@ h1 {
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .fade-img {
@@ -83,6 +84,50 @@ h1 {
   object-fit: cover;
   transition: all 0.2s linear;
   cursor: pointer;
+}
+
+.gallery__item__img {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  border: 1px solid #797979;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.gallery__item {
+  box-shadow: 0 16px 28px -10px rgba(0, 0, 0, 0.6);
+}
+
+.gallery-skeleton {
+  width: 100%;
+}
+
+.gallery-skeleton__link {
+  box-shadow: none;
+  background: #e6e6e6;
+}
+
+.gallery-skeleton__pic {
+  background: #e6e6e6;
+}
+
+.gallery-skeleton__pic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 230, 230, 0),
+    rgba(245, 245, 245, 0.9),
+    rgba(230, 230, 230, 0)
+  );
+  animation: gallery-skeleton-shimmer 1.4s infinite;
+}
+
+@keyframes gallery-skeleton-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .cards__item__img:hover {

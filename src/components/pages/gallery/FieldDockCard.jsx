@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useRef } from "react";
 import GalleryCardItem from "./GalleryCardItem";
 // import Pagination from "@mui/material/Pagination";
 import FieldDock1 from "../../../assets/images/gallery/fielddock/fd1.webp";

@@ -1,9 +1,36 @@
-import React, { useState } from "react";
-import FieldCards from "./FieldCard";
-import PhenoCards from "./PhenoCard";
-import OutreachCards from "./OutreachCard";
-import GreenhouseCards from "./GreenhouseCard";
-import FieldDockCards from "./FieldDockCard";
+import { Suspense, lazy, useState } from "react";
+
+const FieldCards = lazy(() => import("./FieldCard"));
+const PhenoCards = lazy(() => import("./PhenoCard"));
+const OutreachCards = lazy(() => import("./OutreachCard"));
+const GreenhouseCards = lazy(() => import("./GreenhouseCard"));
+const FieldDockCards = lazy(() => import("./FieldDockCard"));
+
+const GallerySkeleton = () => (
+  <div className="gallery-cards gallery-skeleton" aria-hidden="true">
+    <h1 className="gallery-skeleton__title">Gallery</h1>
+    <div className="cards__wrapper">
+      <ul className="cards__items">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <li key={`skeleton-top-${index}`} className="cards__item">
+            <div className="cards__item__link gallery-skeleton__link">
+              <div className="cards__item__pic-wrap gallery-skeleton__pic" />
+            </div>
+          </li>
+        ))}
+      </ul>
+      <ul className="cards__items">
+        {Array.from({ length: 3 }).map((_, index) => (
+          <li key={`skeleton-bottom-${index}`} className="cards__item">
+            <div className="cards__item__link gallery-skeleton__link">
+              <div className="cards__item__pic-wrap gallery-skeleton__pic" />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
 
 const GalleryTabs = ({ activeTab, setActiveTab }) => {
   return (
@@ -58,7 +85,9 @@ function Gallery() {
               resolve the complexities of adaptive traits in crops such as
               sorghum.
             </div>
-            <FieldCards />
+            <Suspense fallback={<GallerySkeleton />}>
+              <FieldCards />
+            </Suspense>
           </>
         )}
         {activeTab === "outreach" && (
@@ -69,7 +98,9 @@ function Gallery() {
               through a behind-the-scenes tour of our lab's studies and
               technologies.
             </div>
-            <OutreachCards />
+            <Suspense fallback={<GallerySkeleton />}>
+              <OutreachCards />
+            </Suspense>
           </>
         )}
         {activeTab === "fielddock" && (
@@ -85,7 +116,9 @@ function Gallery() {
               conditions. The FieldDock platform will run entirely on renewable
               energy and is designed to ultimately have a zero-carbon footprint.
             </div>
-            <FieldDockCards />
+            <Suspense fallback={<GallerySkeleton />}>
+              <FieldDockCards />
+            </Suspense>
           </>
         )}
         {activeTab === "phenotyping" && (
@@ -99,7 +132,9 @@ function Gallery() {
               Phenotyping Facility, the Shakoor Lab is able to gather an
               unprecedented amount of data about the plants we are studying.
             </div>
-            <PhenoCards />
+            <Suspense fallback={<GallerySkeleton />}>
+              <PhenoCards />
+            </Suspense>
           </>
         )}
         {activeTab === "greenhouse" && (
@@ -113,7 +148,9 @@ function Gallery() {
               Phenotyping Facility, the Shakoor Lab is able to gather an
               unprecedented amount of data about the plants we are studying.
             </div>
-            <GreenhouseCards />
+            <Suspense fallback={<GallerySkeleton />}>
+              <GreenhouseCards />
+            </Suspense>
           </>
         )}
       </div>

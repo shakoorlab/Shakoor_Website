@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useRef } from "react";
 import GalleryCardItem from "./GalleryCardItem";
 // import Pagination from "@mui/material/Pagination";
 import Pheno1 from "../../../assets/images/gallery/phenotyping/pheno1.webp";
