@@ -105,16 +105,26 @@ function Gallery() {
         )}
         {activeTab === "fielddock" && (
           <>
-            <div className="content">
-              The FieldDock will be a novel all-in-one system that integrates a
-              sensor base station with GWAS/G x E x M/crop model edge processor,
-              remote wireless sensor network and autonomous UAV drone deployment
-              to generate a daily scalable, cohesive and interconnected set of
-              field microclimate data. FieldDock will capture measurable plant
-              traits, water usage, overall environmental and soil conditions as
-              well as daily snapshots of how a crop is performing in real world
-              conditions. The FieldDock platform will run entirely on renewable
-              energy and is designed to ultimately have a zero-carbon footprint.
+            <div className="content gallery-content--wide">
+              <span className="content__desktop">
+                The FieldDock will be a novel all-in-one system that integrates
+                a sensor base station with GWAS/G x E x M/crop model edge
+                processor, remote wireless sensor network and autonomous UAV
+                drone deployment to generate a daily scalable, cohesive and
+                interconnected set of field microclimate data. FieldDock will
+                capture measurable plant traits, water usage, overall
+                environmental and soil conditions as well as daily snapshots of
+                how a crop is performing in real world conditions. The FieldDock
+                platform will run entirely on renewable energy and is designed
+                to ultimately have a zero-carbon footprint.
+              </span>
+              <span className="content__mobile">
+                The FieldDock will be a novel all-in-one system that integrates
+                a sensor base station with GWAS/G x E x M/crop model edge
+                processor, remote wireless sensor network and autonomous UAV
+                drone deployment to generate a daily scalable, cohesive and
+                interconnected set of field microclimate data.
+              </span>
             </div>
             <Suspense fallback={<GallerySkeleton />}>
               <FieldDockCards />
@@ -123,14 +133,23 @@ function Gallery() {
         )}
         {activeTab === "phenotyping" && (
           <>
-            <div className="content">
-              An essential part of plant science is understanding how plants
-              respond to their environment. One way the Shakoor Lab can measure
-              this is by monitoring a plant&#39;s phenotype, such as leaf size
-              and shape, root structure, growth rate in particular conditions,
-              and more. In the Donald Danforth Plant Science Center's
-              Phenotyping Facility, the Shakoor Lab is able to gather an
-              unprecedented amount of data about the plants we are studying.
+            <div className="content gallery-content--wide">
+              <span className="content__desktop">
+                An essential part of plant science is understanding how plants
+                respond to their environment. One way the Shakoor Lab can measure
+                this is by monitoring a plant&#39;s phenotype, such as leaf size
+                and shape, root structure, growth rate in particular conditions,
+                and more. In the Donald Danforth Plant Science Center's
+                Phenotyping Facility, the Shakoor Lab is able to gather an
+                unprecedented amount of data about the plants we are studying.
+              </span>
+              <span className="content__mobile">
+                An essential part of plant science is understanding how plants
+                respond to their environment. One way the Shakoor Lab can measure
+                this is by monitoring a plant&#39;s phenotype, such as leaf size
+                and shape, root structure, growth rate in particular conditions,
+                and more.
+              </span>
             </div>
             <Suspense fallback={<GallerySkeleton />}>
               <PhenoCards />
@@ -139,14 +158,23 @@ function Gallery() {
         )}
         {activeTab === "greenhouse" && (
           <>
-            <div className="content">
-              An essential part of plant science is understanding how plants
-              respond to their environment. One way the Shakoor Lab can measure
-              this is by monitoring a plant&#39;s phenotype, such as leaf size
-              and shape, root structure, growth rate in particular conditions,
-              and more. In the Donald Danforth Plant Science Center's
-              Phenotyping Facility, the Shakoor Lab is able to gather an
-              unprecedented amount of data about the plants we are studying.
+            <div className="content gallery-content--wide">
+              <span className="content__desktop">
+                An essential part of plant science is understanding how plants
+                respond to their environment. One way the Shakoor Lab can measure
+                this is by monitoring a plant&#39;s phenotype, such as leaf size
+                and shape, root structure, growth rate in particular conditions,
+                and more. In the Donald Danforth Plant Science Center's
+                Phenotyping Facility, the Shakoor Lab is able to gather an
+                unprecedented amount of data about the plants we are studying.
+              </span>
+              <span className="content__mobile">
+                An essential part of plant science is understanding how plants
+                respond to their environment. One way the Shakoor Lab can measure
+                this is by monitoring a plant&#39;s phenotype, such as leaf size
+                and shape, root structure, growth rate in particular conditions,
+                and more
+              </span>
             </div>
             <Suspense fallback={<GallerySkeleton />}>
               <GreenhouseCards />

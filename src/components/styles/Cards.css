@@ -141,6 +141,15 @@ h1 {
   box-shadow: 0 16px 28px -10px rgba(0, 0, 0, 0.6);
 }
 
+.gallery__item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery__item:hover {
+  box-shadow: 0 14px 32px rgba(56, 125, 255, 0.32);
+  transform: translateY(-2px);
+}
+
 .gallery-skeleton {
   width: 100%;
 }
@@ -239,6 +248,10 @@ h1 {
     flex: 0 1 auto; /* Allow the card to take its full height */
     width: 90%; /* Full width for each card */
     margin-bottom: 20px;
+  }
+
+  .gallery-cards .cards__item {
+    width: 100%;
   }
 
   .cards__items--news .cards__item {
