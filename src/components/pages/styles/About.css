@@ -72,7 +72,7 @@
 }
 
 .subtitle {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: black;
   max-width: 630px; /* Set the maximum width */
   margin: 10px auto 0; /* Center the subtitle horizontally */
@@ -98,7 +98,7 @@
     font-size: 2.3rem;
   }
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 1024px) {
@@ -106,7 +106,7 @@
     font-size: 2rem; /* Adjust font size for medium screens */
   }
   .subtitle {
-    font-size: 0.9rem; /* Adjust font size for medium screens */
+    font-size: 1rem; /* Adjust font size for medium screens */
   }
 }
 

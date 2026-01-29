@@ -1,11 +1,35 @@
 import "../../../App.css";
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import AboutHero from "../../hero/about/AboutHero";
 import "../styles/About.css";
 import About1 from "../../../assets/images/about/About34.webp";
 import About2 from "../../../assets/images/about/about_2.webp";
 import About3 from "../../../assets/images/about/about_3.webp";
-import SorghumAbout from "./SorghumAbout";
+
+const SorghumAbout = lazy(() => import("./SorghumAbout"));
+
+const GallerySkeleton = () => (
+  <div className="cards__wrapper gallery-skeleton" aria-hidden="true">
+    <ul className="cards__items">
+      {Array.from({ length: 3 }).map((_, index) => (
+        <li key={`skeleton-top-${index}`} className="cards__item">
+          <div className="cards__item__link gallery-skeleton__link">
+            <div className="cards__item__pic-wrap gallery-skeleton__pic" />
+          </div>
+        </li>
+      ))}
+    </ul>
+    <ul className="cards__items">
+      {Array.from({ length: 3 }).map((_, index) => (
+        <li key={`skeleton-bottom-${index}`} className="cards__item">
+          <div className="cards__item__link gallery-skeleton__link">
+            <div className="cards__item__pic-wrap gallery-skeleton__pic" />
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 const FullScreenComponent = ({
   title,
@@ -70,7 +94,11 @@ function About() {
                   : ""
               }
             />
-            {index === 1 && <SorghumAbout />}
+            {index === 1 && (
+              <Suspense fallback={<GallerySkeleton />}>
+                <SorghumAbout />
+              </Suspense>
+            )}
           </React.Fragment>
         ))}
       </div>

@@ -1,5 +1,29 @@
-import React, { useState } from "react";
-import SorghumCards from "../gallery/SorghumCard";
+import { Suspense, lazy, useState } from "react";
+
+const SorghumCards = lazy(() => import("../gallery/SorghumCard"));
+
+const GallerySkeleton = () => (
+  <div className="cards__wrapper gallery-skeleton" aria-hidden="true">
+    <ul className="cards__items">
+      {Array.from({ length: 3 }).map((_, index) => (
+        <li key={`skeleton-top-${index}`} className="cards__item">
+          <div className="cards__item__link gallery-skeleton__link">
+            <div className="cards__item__pic-wrap gallery-skeleton__pic" />
+          </div>
+        </li>
+      ))}
+    </ul>
+    <ul className="cards__items">
+      {Array.from({ length: 3 }).map((_, index) => (
+        <li key={`skeleton-bottom-${index}`} className="cards__item">
+          <div className="cards__item__link gallery-skeleton__link">
+            <div className="cards__item__pic-wrap gallery-skeleton__pic" />
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 const SorghumAboutTabs = ({ activeTab, setActiveTab }) => {
   return (
@@ -58,8 +82,9 @@ function SorghumAbout() {
             sorghum, and produced 11 M tons in 2021.
           </div>
         )}
-        {/* Move SorghumCards outside the conditional render blocks */}
-        <SorghumCards />
+        <Suspense fallback={<GallerySkeleton />}>
+          <SorghumCards />
+        </Suspense>
       </div>
     </>
   );
