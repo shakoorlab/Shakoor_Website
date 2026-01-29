@@ -11,8 +11,15 @@ function Cards() {
   const itemsPerPage = 9;
   const items = [
     {
+      src: images.article_18,
+      alt: "Nadia Shakoor Working in the Greenhouse",
+      text: "Movers & Shapers: Enterprising St. Louisans behind rising startups",
+      label: "January 5, 2026",
+      path: "https://www.stlmag.com/business/movers-shapers-startups/?utm_campaign=BizSTL&utm_medium=email&_hsenc=p2ANqtz-91ZNri9JOp7j5l_8kp8rBBYCejOGsQPlLFOClLY_FXlm1nJqz5WaVXf3CbRVlrQVBb_LsF4bOJgaxMNh5MGBatuo_6PPXikQENQL9XV8Jup7Mcsa0&_hsmi=396871112&utm_content=396871112&utm_source=hs_email",
+    },
+    {
       src: images.article_15,
-      alt: "Danforth&#39;s New Assistant Member",
+      alt: "Danforth's New Assistant Member",
       text: "Danforth Center Announces New Assistant Member",
       label: "August 6, 2024",
       path: "https://www.danforthcenter.org/news/danforth-center-announces-new-assistant-member/",
