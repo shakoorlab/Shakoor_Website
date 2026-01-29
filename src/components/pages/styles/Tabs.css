@@ -91,6 +91,10 @@
 .cards .content.gallery-content--wide {
   max-width: 900px;
 }
+
+.cards .content.team-content--wide {
+  max-width: 900px;
+}
 .summary-content {
   text-align: center;
   max-width: 1200px;
@@ -137,6 +141,10 @@
 }
 
 @media (max-width: 768px) {
+  .cards .content.team-content--wide {
+    max-width: 600px;
+  }
+
   .content__mobile {
     display: inline;
   }
@@ -166,6 +174,11 @@
   }
   .grid-container {
     grid-template-columns: 1fr;
+  }
+
+  .left-box,
+  .right-box {
+    font-size: 1.1rem;
   }
 
   .tab-content .content {

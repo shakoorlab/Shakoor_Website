@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import { Suspense, lazy, useState } from "react";
 import "../styles/Tabs.css";
 import TeamHero from "../../hero/team/TeamHero";
-import LabAlumni from "./LabAlumni";
-import TeamCards from "./TeamCards";
-import ReuProgram from "./REU";
-import Internships from "./Internships";
+
+const LabAlumni = lazy(() => import("./LabAlumni"));
+const TeamCards = lazy(() => import("./TeamCards"));
+const ReuProgram = lazy(() => import("./REU"));
+const Internships = lazy(() => import("./Internships"));
 
 const ResearchTabs = ({ activeTab, setActiveTab }) => {
   return (
@@ -97,18 +98,20 @@ function Team() {
         <ResearchTabs activeTab={activeTab} setActiveTab={setActiveTab} />
         {activeTab === "team" && (
           <>
-            <div className="content">
+            <div className="content team-content--wide">
               We are combining high-quality genomic data with the analysis of
               greenhouse and field-based high-throughput phenotyping data to
               resolve the complexities of adaptive traits in crops such as
               sorghum.
             </div>
-            <TeamCards />
+            <Suspense fallback={null}>
+              <TeamCards />
+            </Suspense>
           </>
         )}
         {activeTab === "alumni" && (
           <>
-            <div className="content">
+            <div className="content team-content--wide">
               Scientists who have been a part of the Shakoor Lab over the years
               have gone on to achieve remarkable success in various fields.
               These alumni have contributed significantly to advancing our
@@ -117,12 +120,14 @@ function Team() {
               support embody the enduring spirit and excellence of the Shakoor
               Lab.
             </div>
-            <LabAlumni />
+            <Suspense fallback={null}>
+              <LabAlumni />
+            </Suspense>
           </>
         )}
         {activeTab === "reu" && (
           <>
-            <div className="content">
+            <div className="content team-content--wide">
               Fostering the next generation of plant scientists is critical to
               solving some of our planet’s biggest challenges. For ten weeks
               each summer, students in our Research Experience for Undergraduate
@@ -131,12 +136,14 @@ function Team() {
               science. The program is made possible through generous support
               from the National Science Foundation (NSF).
             </div>
-            <ReuProgram />
+            <Suspense fallback={null}>
+              <ReuProgram />
+            </Suspense>
           </>
         )}
         {activeTab === "internships" && (
           <>
-            <div className="content">
+            <div className="content team-content--wide">
               Interns who have passed through our lab have played a crucial role
               in driving forward our research, bringing fresh perspectives and
               enthusiasm to our projects. The hands-on experience and mentorship
@@ -146,7 +153,9 @@ function Team() {
               ties with our lab that reflect the enduring influence of their
               time spent here.
             </div>
-            <Internships />
+            <Suspense fallback={null}>
+              <Internships />
+            </Suspense>
           </>
         )}
       </div>
