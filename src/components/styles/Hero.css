@@ -104,6 +104,8 @@
   opacity: 0;
   display: block;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 
 .slide .item::after {
@@ -132,6 +134,7 @@
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
+
 
 /* Responsive adjustments for screens smaller than a laptop */
 @media (max-width: 1024px) {
