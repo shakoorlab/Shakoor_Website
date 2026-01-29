@@ -91,7 +91,10 @@ function NavBar() {
                 <Nav.Link href="/gallery">Gallery</Nav.Link>
               </Nav>
               <Form className="d-flex">
-                <Button href="/contact" variant="outline-success">
+                <Button
+                  href="mailto:shakoorlab.danforth@gmail.com"
+                  variant="outline-success"
+                >
                   Contact
                 </Button>
               </Form>
