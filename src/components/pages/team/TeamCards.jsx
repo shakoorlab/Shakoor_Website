@@ -88,6 +88,12 @@ function TeamCards() {
       text: "Sasi Velchuri",
       title: "Pivot to Plants Fellow",
     },
+    {
+      src: images.Auralia,
+      alt: "Auralia Ibel",
+      text: "Auralia Ibel",
+      title: "High School Intern",
+    },
   ];
   const rows = [];
   for (let index = 0; index < items.length; index += 3) {
@@ -99,7 +105,10 @@ function TeamCards() {
       <h1>Our Team</h1>
       <div className="cards__wrapper cards__wrapper--team">
         {rows.map((row, rowIndex) => (
-          <ul key={`team-row-${rowIndex}`} className="cards__items cards__items--team">
+          <ul
+            key={`team-row-${rowIndex}`}
+            className="cards__items cards__items--team"
+          >
             {row.map((item, itemIndex) => (
               <TeamItem
                 key={`${item.alt}-${itemIndex}`}
