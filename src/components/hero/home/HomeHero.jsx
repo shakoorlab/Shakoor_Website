@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../../styles/Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -6,7 +6,7 @@ import img4 from "../../../assets/images/home/img4.webp";
 import img3 from "../../../assets/images/home/3.webp";
 import bee from "../../../assets/images/home/bee.webp";
 import fd from "../../../assets/images/home/fd.webp";
-import best from "../../../assets/images/home/best_sorghum.webp";
+import best from "../../../assets/images/gallery/phenotyping/pheno6.webp";
 import img6 from "../../../assets/images/home/img6.webp";
 
 function HomeHero() {
@@ -39,7 +39,7 @@ function HomeHero() {
       id: 5,
       url: best,
       name: "Phenotyping ",
-      description: "In-house analysis using the Bellwether Phenotyper ",
+      description: "Analysis using the Bellwether Phenotyper ",
     },
     {
       id: 6,
@@ -61,23 +61,26 @@ function HomeHero() {
     setCurrent(prevIndex);
   };
 
+  const activeImage = images[current];
+
   return (
     <div className="hero-container">
       <div className="top-section">
         <div className="slide">
-          {images.map((image, index) => (
-            <div
-              key={image.id}
-              className={`item ${index === current ? "active" : ""}`}
-              style={{ backgroundImage: `url(${image.url})` }}
-            >
-              <div className="content">
-                <div className="name">{image.name}</div>
-                <div className="des">{image.description}</div>
-                {/* <button>See More</button> */}
-              </div>
+          <div key={activeImage.id} className="item active">
+            <img
+              src={activeImage.url}
+              alt={activeImage.name}
+              loading="eager"
+              decoding="async"
+              className="hero-slide-image"
+            />
+            <div className="content">
+              <div className="name">{activeImage.name}</div>
+              <div className="des">{activeImage.description}</div>
+              {/* <button>See More</button> */}
             </div>
-          ))}
+          </div>
         </div>
         <div className="preview-section">
           {images.map((image, index) => (
@@ -85,6 +88,8 @@ function HomeHero() {
               key={image.id}
               src={image.url}
               alt={image.name}
+              loading="lazy"
+              decoding="async"
               className={`preview ${index === current ? "selected" : ""}`}
               onClick={() => setCurrent(index)}
             />

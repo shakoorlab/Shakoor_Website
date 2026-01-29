@@ -27,7 +27,6 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-size: cover;
   display: none; /* Initially hide all items */
   transition: 0.5s;
 }
@@ -104,14 +103,34 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
   opacity: 0;
   display: block;
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
+}
+
+.slide .item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.slide .item .content {
+  z-index: 2;
 }
 
 .slide .item.active {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive adjustments for screens smaller than a laptop */
