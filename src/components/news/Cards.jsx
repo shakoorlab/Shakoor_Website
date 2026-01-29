@@ -7,6 +7,7 @@ import images from "../../assets/images/news/NewsImageImports";
 function Cards() {
   const [currentPage, setCurrentPage] = useState(1);
   const headerRef = useRef(null);
+  const hasPaginatedRef = useRef(false);
   const itemsPerPage = 9;
   const items = [
     {
@@ -104,9 +105,13 @@ function Cards() {
 
   const handlePageChange = (event, value) => {
     setCurrentPage(value);
+    hasPaginatedRef.current = true;
   };
 
   useEffect(() => {
+    if (!hasPaginatedRef.current) {
+      return;
+    }
     if (!headerRef.current) {
       return;
     }
@@ -114,7 +119,7 @@ function Cards() {
     const scrollToHeader = () => {
       const targetTop =
         headerRef.current.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top: targetTop, behavior: "smooth" });
+      window.scrollTo({ top: targetTop, behavior: "auto" });
     };
     const frame = window.requestAnimationFrame(scrollToHeader);
     return () => window.cancelAnimationFrame(frame);

@@ -25,6 +25,7 @@
   opacity: 0;
   transform: scale(85%);
   transition: transform 2s, opacity 2s;
+  will-change: transform, opacity;
 }
 
 .slider--zoom {
