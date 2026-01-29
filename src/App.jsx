@@ -10,7 +10,6 @@ import Team from "./components/pages/team/Team";
 import Gallery from "./components/pages/gallery/Gallery";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ContactHero from "./components/hero/contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -27,8 +26,6 @@ function App() {
 
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
-
-        <Route path="/contact" element={<ContactHero />} />
       </Routes>
       <Footer />
     </Router>
