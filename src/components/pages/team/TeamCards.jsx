@@ -71,13 +71,13 @@ function TeamCards() {
       title: "Laboratory Technician",
     },
     {
-      src: images.NoPhoto,
+      src: images.Brooke,
       alt: "Brooke Williams",
       text: "Brooke Williams",
       title: "Laboratory Technician",
     },
     {
-      src: images.NoPhoto,
+      src: images.Katie,
       alt: "Katie Koziatek",
       text: "Katie Koziatek",
       title: "Laboratory Technician",
