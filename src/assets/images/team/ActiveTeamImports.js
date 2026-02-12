@@ -9,6 +9,8 @@ import Jake from "./team_headshots/Active_Team/Jake_Stanton.webp";
 import Colton from "./team_headshots/Active_Team/Colton_Burris.webp";
 import Paige from "./team_headshots/Active_Team/Paige_Michalik.webp";
 import Julia from "./team_headshots/Active_Team/Julia_Thorn.webp";
+import Katie from "./team_headshots/Active_Team/katie_koziatek.webp";
+import Brooke from "./team_headshots/Active_Team/brooke_williams.webp";
 import Sasi from "./team_headshots/Pivot_to_Plants/Sasi_Velchuri.webp";
 import Auralia from "./team_headshots/Active_Team/Auralia_Ibel.webp";
 import NoPhoto from "./team_headshots/Danforth_Logo.webp";
@@ -25,6 +27,8 @@ export default {
   Colton,
   Paige,
   Julia,
+  Katie,
+  Brooke,
   Sasi,
   Auralia,
   NoPhoto,
