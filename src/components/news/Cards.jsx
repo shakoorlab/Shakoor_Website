@@ -3,6 +3,7 @@ import CardItem from "./CardItem";
 import Pagination from "@mui/material/Pagination";
 import "../styles/Cards.css";
 import images from "../../assets/images/news/NewsImageImports";
+import nadia_image from "../../assets/images/team/ActiveTeamImports.js";
 
 function Cards() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -10,6 +11,13 @@ function Cards() {
   const hasPaginatedRef = useRef(false);
   const itemsPerPage = 9;
   const items = [
+    {
+      src: nadia_image.Nadia,
+      alt: "Nadia Shakoor Posing for a Photo",
+      text: "Dr. Nadia Shakoor recognized as one of the honorees of the 2026 Outstanding St. Louis Scientists Awards.",
+      label: "March 10, 2026",
+      path: "https://academyofsciencestl.org/news/nadia-shakoor-ph-d/",
+    },
     {
       src: images.article_18,
       alt: "Nadia Shakoor Working in the Greenhouse",
@@ -20,7 +28,7 @@ function Cards() {
     {
       src: images.article_15,
       alt: "Danforth's New Assistant Member",
-      text: "Danforth Center Announces New Assistant Member",
+      text: "The Donald Danforth Plant Science Center Announces New Assistant Member",
       label: "August 6, 2024",
       path: "https://www.danforthcenter.org/news/danforth-center-announces-new-assistant-member/",
     },
@@ -41,7 +49,7 @@ function Cards() {
     {
       src: images.article_13,
       alt: "PheNode in Field",
-      text: "Leading Transportation Partnership Deploys Agrela&#39;s Vegetation Monitoring Technology",
+      text: "Leading Transportation Partnership Deploys Agrela's Vegetation Monitoring Technology",
       label: "November 16, 2023",
       path: "https://apnews.com/press-release/3bl-media/georgia-plants-transportation-d58ca32fd396a4fd767d0dce333d7581",
     },
