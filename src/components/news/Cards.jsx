@@ -4,6 +4,7 @@ import Pagination from "@mui/material/Pagination";
 import "../styles/Cards.css";
 import images from "../../assets/images/news/NewsImageImports";
 import nadia_image from "../../assets/images/team/ActiveTeamImports.js";
+import team_image from "../../assets/images/team/team1.webp";
 
 function Cards() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -11,6 +12,13 @@ function Cards() {
   const hasPaginatedRef = useRef(false);
   const itemsPerPage = 9;
   const items = [
+    {
+      src: team_image,
+      alt: "Nadia Shakoor and Team Posing for a Photo",
+      text: "Global Sorghum 'Pangenome' Published in Nature Accelerates Discovery of Resilient Crop Traits",
+      label: "March 11, 2026",
+      path: "https://www.danforthcenter.org/news/global-sorghum-pangenome/",
+    },
     {
       src: nadia_image.Nadia,
       alt: "Nadia Shakoor Posing for a Photo",
