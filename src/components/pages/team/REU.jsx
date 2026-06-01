@@ -33,6 +33,11 @@ function ReuProgram() {
     },
   ];
 
+  const rows = [];
+  for (let index = 0; index < items.length; index += 3) {
+    rows.push(items.slice(index, index + 3));
+  }
+
   //   const handlePageChange = (event, value) => {
   //     setCurrentPage(value);
   //   };
@@ -44,17 +49,22 @@ function ReuProgram() {
       <div className="cards_wrapper cards__wrapper--team">
         {currentPage === 1 && (
           <>
-            <ul className="cards__items cards__items--team">
-              {items.map((item, itemIndex) => (
-                <TeamItem
-                  key={`${item.alt}-${itemIndex}`}
-                  src={item.src}
-                  alt={item.alt}
-                  text={item.text}
-                  title={item.title}
-                />
-              ))}
-            </ul>
+            {rows.map((row, rowIndex) => (
+              <ul
+                key={`reu-row-${rowIndex}`}
+                className="cards__items cards__items--team"
+              >
+                {row.map((item, itemIndex) => (
+                  <TeamItem
+                    key={`${item.alt}-${itemIndex}`}
+                    src={item.src}
+                    alt={item.alt}
+                    text={item.text}
+                    title={item.title}
+                  />
+                ))}
+              </ul>
+            ))}
           </>
         )}
         {/* <div className="pagination-container">

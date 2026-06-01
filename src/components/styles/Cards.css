@@ -147,6 +147,19 @@ h1 {
   box-sizing: border-box;
 }
 
+/* Logo placeholder cards: show full logo (no top crop) and draw a bottom
+   divider line to match the edge a real photo creates above the name/title. */
+.team__item__pic-wrap--placeholder {
+  border-bottom: 0.5px solid #797979;
+}
+
+.team__item__img--placeholder {
+  object-fit: contain;
+  object-position: center 60%;
+  background: #fff;
+  padding: 12% 18% 8%;
+}
+
 .team__item__info {
   border: 0;
 }

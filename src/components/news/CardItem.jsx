@@ -18,6 +18,7 @@ function CardItem(props) {
               loading="lazy"
               decoding="async"
               className="cards__item__img news__item__img"
+              style={props.imgStyle}
             />
           </figure>
           <div className="cards__item__info">

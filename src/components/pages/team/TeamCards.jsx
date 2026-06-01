@@ -11,12 +11,6 @@ function TeamCards() {
       title: "Assistant Member and Principal Investigator",
     },
     {
-      src: images.Jocelyn,
-      alt: "Jocelyn Saxton",
-      text: "Jocelyn Saxton",
-      title: "Lab Manager",
-    },
-    {
       src: images.Monica,
       alt: "Monica Alsup ",
       text: "Monica Alsup",
@@ -77,22 +71,10 @@ function TeamCards() {
       title: "Laboratory Technician",
     },
     {
-      src: images.Katie,
-      alt: "Katie Koziatek",
-      text: "Katie Koziatek",
-      title: "Laboratory Technician",
-    },
-    {
       src: images.Sasi,
       alt: "Sasi Velchuri",
       text: "Sasi Velchuri",
       title: "Pivot to Plants Fellow",
-    },
-    {
-      src: images.Auralia,
-      alt: "Auralia Ibel",
-      text: "Auralia Ibel",
-      title: "High School Intern",
     },
   ];
   const rows = [];

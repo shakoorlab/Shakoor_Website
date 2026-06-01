@@ -8,6 +8,18 @@ function LabAlumni() {
   const [currentPage, setCurrentPage] = useState(1);
   const items = [
     {
+      src: images.Katie,
+      alt: "Katie Koziatek",
+      text: "Katie Koziatek",
+      title: "Laboratory Technician",
+    },
+    {
+      src: images.Jocelyn,
+      alt: "Jocelyn Saxton",
+      text: "Jocelyn Saxton",
+      title: "Lab Manager",
+    },
+    {
       src: images.Alice,
       alt: "Alice Kujur",
       text: "Alice Kujur",

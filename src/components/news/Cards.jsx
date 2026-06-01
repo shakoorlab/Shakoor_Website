@@ -13,6 +13,43 @@ function Cards() {
   const itemsPerPage = 9;
   const items = [
     {
+      src: images.article_19,
+      alt: "Dr. Shakoor discussing the PheNode system on Fox 2",
+      text: "Dr. Shakoor on the PheNode System Helping Farmers Keep Pace with a Changing Climate",
+      label: "May 28, 2026",
+      path: "https://www.linkedin.com/posts/donald-danforth-plant-science-center_plantscience-precisionagriculture-cropstressmonitoring-activity-7465794901616533504-Udju",
+    },
+    {
+      src: images.article_22,
+      alt: "Agrela Ecosystems closes a $500K funding round",
+      text: "Agrela Ecosystems Closes $500K Funding Round to Scale PheNode",
+      label: "May 21, 2026",
+      path: "https://www.linkedin.com/posts/donald-danforth-plant-science-center_phenode-from-fields-to-highways-activity-7463275983853436929-fmdG",
+      imgStyle: { objectPosition: "center 38%" },
+    },
+    {
+      src: nadia_image.Nadia,
+      alt: "Nadia Shakoor Posing for a Photo",
+      text: "Scientist Spotlight: Nadia Shakoor, Ph.D. — The Academy of Science - St. Louis",
+      label: "May 20, 2026",
+      path: "https://www.linkedin.com/posts/academy-of-science-st--louis_scientist-spotlight-nadia-shakoor-phd-activity-7462949738846515200-yYVe",
+    },
+    {
+      src: images.article_20,
+      alt: "Earth Day — regenerative agriculture and sorghum research",
+      text: "Earth Day: Advancing Regenerative Agriculture with Sorghum",
+      label: "April 21, 2026",
+      path: "https://www.linkedin.com/posts/donald-danforth-plant-science-center_earthday-regenerativeagriculture-sorghum-activity-7452358006635147264-VQbD",
+      imgStyle: { objectPosition: "center 25%" },
+    },
+    {
+      src: images.article_21,
+      alt: "Donald Danforth Plant Science Center joins the ARISE partner series",
+      text: "Donald Danforth Plant Science Center Joins ARISE",
+      label: "April 10, 2026",
+      path: "https://www.linkedin.com/posts/plantbiology-biotechnology-research-share-7448399657157931009-KgXN/",
+    },
+    {
       src: team_image,
       alt: "Nadia Shakoor and Team Posing for a Photo",
       text: "Global Sorghum 'Pangenome' Published in Nature Accelerates Discovery of Resilient Crop Traits",
@@ -165,6 +202,7 @@ function Cards() {
                 text={item.text}
                 label={item.label}
                 path={item.path}
+                imgStyle={item.imgStyle}
               />
             ))}
           </ul>

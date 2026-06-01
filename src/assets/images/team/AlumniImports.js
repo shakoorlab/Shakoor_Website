@@ -11,6 +11,8 @@ import Brendan from "./team_headshots/Alumni/Brendan_Eddingfield.webp";
 import Aaron from "./team_headshots/Alumni/Aaron_Fackler.webp";
 import Ella from "./team_headshots/Alumni/Ella_Marks.webp";
 import Gabriel from "./team_headshots/Interns/Gabriel_Bernstein.webp";
+import Jocelyn from "./team_headshots/Alumni/Jocelyn_Saxton.webp";
+import Katie from "./team_headshots/Alumni/katie_koziatek.webp";
 import NoPhoto from "./team_headshots/Danforth_Logo.webp";
 
 export default {
@@ -27,5 +29,7 @@ export default {
   Aaron,
   Ella,
   Gabriel,
+  Jocelyn,
+  Katie,
   NoPhoto,
 };

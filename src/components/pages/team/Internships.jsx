@@ -9,6 +9,18 @@ function Internships() {
   const headerRef = useRef(null);
   const items = [
     {
+      src: images.NoPhoto,
+      alt: "Raleigh Delf",
+      text: "Raleigh Delf",
+      title: "High School Intern",
+    },
+    {
+      src: images.Auralia,
+      alt: "Auralia Ibel",
+      text: "Auralia Ibel",
+      title: "High School Intern",
+    },
+    {
       src: images.Grace,
       alt: "Grace Chambers",
       text: "Grace Chambers",
