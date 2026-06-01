@@ -46,7 +46,7 @@
   text-align: left;
   color: #eee;
   transform: translate(0, -50%);
-  font-family: Montserrat; /*//! change /*//
+  font-family: Montserrat; /* change */
 }
 
 .content .name {
